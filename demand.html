@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang["zh-tw">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scaleble=yes, initial-scale=1.0, maximum-scale=2.0" />
+
+<title>地下城與勇士養成 儲值商店</title>
+<meta name="description" content="地下城與勇士養成, NEXON Company, 遊戲,角色扮演, MMORPG, MyCard APP, 儲值,禮包,商店,教學,點數">
+<meta name="description" content="地下城與勇士養成" />
+<meta property="og:title" content="地下城與勇士養成 儲值商店" />
+<meta property="og:type" content="website" />
+<!-- 到時候放上線的正式網址 -->
+<meta property="og:url" content="到時候放上線的正式網址" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="地下城與勇士養成" />
+<meta property="og:site_name" content="MyCard" />
+
+
+<link rel="stylesheet" href="css/L.css">
+<link rel="stylesheet" href="css/LM.css" media="only screen and (min-width:1025px) and (max-width:1680px)">
+<link rel="stylesheet" href="css/M.css" media="only screen and (min-width:600px) and (max-width:1024px)">
+<link rel="stylesheet" href="css/S.css" media="only screen and (max-width:599px)">
+<link rel="stylesheet" href="css/style.css">	
+<link rel="stylesheet" href="css/daterangepicker.css" />
+
+<!-- jquery引入檔 -->
+<script src="js/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
+	
+	<script src="https://image.mycard520.com/GangStart/js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.min.js"></script>
+	
+<!-- google fonts 字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+<!-- 導覽列 -->
+    <nav>
+        <div class="nav_box">
+            <div class="logo">
+                <img src="https://image.mycard520.com/maplestorym/images/nexon_w.png" alt="">
+            </div>
+
+            <div class="burger_menu">
+                <div class="burger_menu_box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <ul class="menu_box">
+                <li id="nav_front_page">
+                    <a target="_blank" href="login_product.html">首頁</a>
+                </li>
+                <li id="nav_mall" class="itembox drop-down">
+                    <a class="active" target="_blank" href="login_product.html">台灣商店</a>
+                </li>
+                <li id="nav_mall" class="itembox drop-down">
+                    <a target="_blank" href="index.html">港澳商店</a>
+                </li>
+                <li id="nav_record">
+                    <a target="_blank" href="demand.html">購買紀錄查詢</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- 主視覺 -->
+<div id="wrapper">
+	<div class="login">
+		<h1> 儲值紀錄查詢</h1>
+		<ul><img src="img/login_iOS.webp"></ul>
+		<ul><img src="img/login_Google.webp"></ul>
+    </div>
+	<div class="record">
+		<ul>
+		  <li>玩家ID</li>
+		  <dl>1234567890</dl>
+		</ul>
+		<ul>
+		  <li>玩家名稱</li>
+		  <dl>泰斯特</dl>
+		</ul>
+		<ul>
+		  <li>查詢日期</li>
+		  <dl><label><input class="input" type="text" name="datefilter" class="calendar" autocomplete="off" placeholder="開始時間 - 結束時間"></label></dl>
+		  <div class="search">查詢</div>
+		</ul>
+  </div>
+  <div id="search_result_title"><img src="img/search_result_title.webp"></div>
+	<div id="search_result">
+		             <div class="demand">
+                        <div class="auto2">
+                            <div class="box">
+                                <div class="demand-r">
+                                    <div class="form2">
+                                        <table width="100%" cellpadding="0" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th bgcolor="#c5afaf">訂單編號</th>
+                                                    <th bgcolor="#c5afaf">MyCard交易序號</th>
+                                                    <th bgcolor="#c5afaf">購買時間</th>
+                                                    <th bgcolor="#c5afaf">商品價格</th>
+                                                    <th bgcolor="#c5afaf">購買商品</th>
+                                                    <th bgcolor="#c5afaf">訂單狀態</th>
+                                                    <th bgcolor="#c5afaf">活動名稱</th>
+                                                    <th bgcolor="#c5afaf">獎項名稱</th>
+                                                    <th bgcolor="#c5afaf">獎勵序號</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td bgcolor="#f4f4f4">633b07b8d624f643ca293219</td>
+                                                    <td bgcolor="#f4f4f4">CGM2211240014312</td>
+                                                    <td bgcolor="#f4f4f4">2022-10-04 11:36</td>
+                                                    <td bgcolor="#f4f4f4">170元</td>
+                                                    <td bgcolor="#f4f4f4">120鑽石-一次限定</td>
+                                                    <td bgcolor="#f4f4f4">購買成功</td>
+                                                    <td bgcolor="#f4f4f4">XXXX</td>
+                                                    <td bgcolor="#f4f4f4">XXXX</td>
+                                                    <td bgcolor="#f4f4f4" class="fle"><span class="sn">E1F2G3H4I5J6K7L8M9N0O1</span>
+														<button class="copy-sn">複製</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
+                                                    <td bgcolor="#ffffff">CGM2211240014312</td>
+                                                    <td bgcolor="#ffffff">2022-10-04 11:36</td>
+                                                    <td bgcolor="#ffffff">170元</td>
+                                                    <td bgcolor="#ffffff">60鑽石</td>
+                                                    <td bgcolor="#ffffff">處理中</td>
+                                                    <td bgcolor="#ffffff">XXXX</td>
+                                                    <td bgcolor="#ffffff">XXXX</td>
+                                                    <td bgcolor="#ffffff"><span class="sn">E1F2G3H4I5J6K7L8M9N0O1</span><button
+                                                            class="copy-sn">複製</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td bgcolor="#f4f4f4">633b07b8d624f643ca293219</td>
+                                                    <td bgcolor="#f4f4f4">CGM2211240014312</td>
+                                                    <td bgcolor="#f4f4f4">2022-10-04 11:36</td>
+                                                    <td bgcolor="#f4f4f4">170元</td>
+                                                    <td bgcolor="#f4f4f4">60鑽石</td>
+                                                    <td bgcolor="#f4f4f4">處理中</td>
+                                                    <td bgcolor="#f4f4f4">XXXX</td>
+                                                    <td bgcolor="#f4f4f4">XXXX</td>
+                                                    <td bgcolor="#f4f4f4"><span class="sn">E1F2G3H4I5J6K7L8M9N0O1</span><button
+                                                            class="copy-sn">複製</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
+                                                    <td bgcolor="#ffffff">CGM2211240014312</td>
+                                                    <td bgcolor="#ffffff">2022-10-04 11:36</td>
+                                                    <td bgcolor="#ffffff">170元</td>
+                                                    <td bgcolor="#ffffff">120鑽石-一次限定</td>
+                                                    <td bgcolor="#ffffff">購買成功</td>
+                                                    <td bgcolor="#ffffff">XXXX</td>
+                                                    <td bgcolor="#ffffff">XXXX</td>
+                                                    <td bgcolor="#ffffff"><span class="sn">E1F2G3H4I5J6K7L8M9N0O1</span><button
+                                                            class="copy-sn">複製</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td bgcolor="#f4f4f4">633b07b8d624f643ca293219</td>
+                                                    <td bgcolor="#f4f4f4">CGM2211240014312</td>
+                                                    <td bgcolor="#f4f4f4">2022-10-04 11:36</td>
+                                                    <td bgcolor="#f4f4f4">170元</td>
+                                                    <td bgcolor="#f4f4f4">120鑽石-一次限定</td>
+                                                    <td bgcolor="#f4f4f4">購買成功</td>
+                                                    <td bgcolor="#f4f4f4">XXXX</td>
+                                                    <td bgcolor="#f4f4f4">XXXX</td>
+                                                    <td bgcolor="#f4f4f4"><span class="sn">E1F2G3H4I5J6K7L8M9N0O1</span><button
+                                                            class="copy-sn">複製</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
+                                                    <td bgcolor="#ffffff">CGM2211240014312</td>
+                                                    <td bgcolor="#ffffff">2022-10-04 11:36</td>
+                                                    <td bgcolor="#ffffff">170元</td>
+                                                    <td bgcolor="#ffffff">60鑽石</td>
+                                                    <td bgcolor="#ffffff">購買成功</td>
+                                                    <td bgcolor="#ffffff">XXXX</td>
+                                                    <td bgcolor="#ffffff">XXXX</td>
+                                                    <td bgcolor="#ffffff"><span class="sn">E1F2G3H4I5J6K7L8M9N0O1</span><button
+                                                            class="copy-sn">複製</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td bgcolor="#f4f4f4">633b07b8d624f643ca293219</td>
+                                                    <td bgcolor="#f4f4f4">CGM2211240014312</td>
+                                                    <td bgcolor="#f4f4f4">2022-10-04 11:36</td>
+                                                    <td bgcolor="#f4f4f4">170元</td>
+                                                    <td bgcolor="#f4f4f4">60鑽石</td>
+                                                    <td bgcolor="#f4f4f4">購買成功</td>
+                                                    <td bgcolor="#f4f4f4">XXXX</td>
+                                                    <td bgcolor="#f4f4f4">XXXX</td>
+                                                    <td bgcolor="#f4f4f4"><span class="sn">E1F2G3H4I5J6K7L8M9N0O1</span><button
+                                                            class="copy-sn">複製</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
+                                                    <td bgcolor="#ffffff">CGM2211240014312</td>
+                                                    <td bgcolor="#ffffff">2022-10-04 11:36</td>
+                                                    <td bgcolor="#ffffff">170元</td>
+                                                    <td bgcolor="#ffffff">120鑽石-一次限定</td>
+                                                    <td bgcolor="#ffffff">購買成功</td>
+                                                    <td bgcolor="#ffffff">XXXX</td>
+                                                    <td bgcolor="#ffffff">XXXX</td>
+                                                    <td bgcolor="#ffffff"><span class="sn">E1F2G3H4I5J6K7L8M9N0O1</span><button
+                                                            class="copy-sn">複製</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <ul class="list_demand">
+                                            <li><a class="link_demand" href=" ">1</a></li>
+                                            <li><a class="link_demand" href=" ">2</a></li>
+                                            <li><a class="link_demand" href=" ">3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+	</div>
+	
+  <div id="footer">
+	    <div class="terms2"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
+		<ul><img src="img/class12.png"></ul>
+		<li>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容<br>
+本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務<br>
+請注意遊戲時間，避免沉迷</li>
+	    <ol>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容。本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務。請注意遊戲時間，避免沉迷</ol>
+	    <dd><img src="img/mycard_logo.svg"></dd>
+        <dl><img src="img/nexon_w.png"></dl>
+		<div class="terms"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
+	  
+	</div>
+</div>
+
+    <script>
+        $(document).ready(function () {
+
+            // 複製序號
+            $(".copy-sn").click(function () {
+                const snText = $(this).siblings(".sn").text();
+                const tempInput = $("<input>");
+                $("body").append(tempInput);
+                tempInput.val(snText).select();
+                document.execCommand("copy");
+                tempInput.remove();
+                alert("序號已複製");
+            });
+
+            // 日曆開始
+            // 監聽datepicker按鈕
+            function initCalendar($el, options, formatCallback) {
+                $el.daterangepicker(options);
+
+                // 監聽 apply 事件，點「確認」才填值
+                $el.on("apply.daterangepicker", function (ev, picker) {
+                    $(this).val(formatCallback(picker));
+                });
+
+                // 監聽 cancel 事件，點「清除」清空
+                $el.on("cancel.daterangepicker", function () {
+                    $(this).val("");
+                });
+            }
+
+            // 區間選取
+            $('input[name="datefilter"]').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    format: "YYYY/MM/DD", // 這行設定 drp-selected 日期格式
+                    cancelLabel: '清除',
+                    applyLabel: "確認",
+                }
+            });
+
+            $('input[name="datefilter"]').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format('YYYY/MM/DD'));
+            });
+
+            $('input[name="datefilter"]').on('cancel.daterangepicker', function (ev, picker) {
+                $(this).val('');
+            });
+            // 日曆結束
+        });
+    </script>
+</body>
+
+</html>
