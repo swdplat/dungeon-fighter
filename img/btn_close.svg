@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 109 109">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#radial-gradient1);
+      }
+
+      .st0, .st1, .st2 {
+        fill-rule: evenodd;
+      }
+
+      .st3 {
+        fill: #f7f7f7;
+      }
+
+      .st1 {
+        fill: url(#radial-gradient);
+      }
+
+      .st2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="54.5" cy="54.5" fx="54.5" fy="54.5" r="49.65" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8351e"/>
+      <stop offset="1" stop-color="#a31f24"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient1" cx="54.5" cy="54.5" fx="54.5" fy="54.5" r="54.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient" x1="6.1" y1="34.4" x2="104.08" y2="34.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8351e"/>
+      <stop offset="1" stop-color="#a31f24"/>
+    </linearGradient>
+  </defs>
+  <path class="st1" d="M104.15,54.5c0,27.42-22.23,49.65-49.65,49.65S4.85,81.92,4.85,54.5,27.08,4.85,54.5,4.85s49.65,22.23,49.65,49.65Z"/>
+  <path class="st0" d="M54.5,0C24.45,0,0,24.45,0,54.5s24.45,54.5,54.5,54.5,54.5-24.45,54.5-54.5S84.55,0,54.5,0ZM54.5,101.67c-26.05,0-47.17-21.12-47.17-47.17S28.45,7.33,54.5,7.33s47.17,21.12,47.17,47.17-21.12,47.17-47.17,47.17Z"/>
+  <path class="st2" d="M72.34,51.9c10.58,6.72,21.25,9.61,31.46,9.98.19-1.75.28-3.52.28-5.32,0-27.42-22.23-49.65-49.64-49.65C30.92,6.91,11.22,23.27,6.1,45.22c14.08-7.86,36.4-12.27,66.24,6.68Z"/>
+  <polygon class="st3" points="82.93 39.52 69.48 26.07 54.5 42.21 39.52 26.07 26.07 39.52 42.21 54.5 26.07 69.48 39.52 82.93 54.5 66.79 69.48 82.93 82.93 69.48 66.79 54.5 82.93 39.52"/>
+</svg>

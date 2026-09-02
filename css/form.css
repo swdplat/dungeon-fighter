@@ -1,0 +1,25 @@
+﻿.table {
+	width:100%;
+	height:auto;
+	outline:1px solid #666666;
+	float:left;
+}
+th {
+	outline:1px solid #666666;
+	padding:2px;
+	white-space: nowrap;
+	text-align:center;
+}
+td {
+    outline:1px solid #666666;
+	padding:2px;
+	white-space: nowrap;
+	text-align:center;
+}
+tr {
+	line-height:50px;
+	outline:1px solid #666666;
+	padding:2px;
+	white-space: nowrap;
+	text-align:center;
+}

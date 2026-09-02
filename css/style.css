@@ -20,23 +20,7 @@ ul li,
 li {
     list-style: none;
 }
-th {
-	border-right:1px solid #cccccc;
-	padding:2px;
-	white-space: nowrap;
-}
-td {
-    border-right:1px solid #cccccc;
-	border-left:1px solid #cccccc;
-	padding:2px;
-	white-space: nowrap;
-}
-tr {
-	line-height:50px;
-	border:1px solid #cccccc;
-	padding:2px;
-	white-space: nowrap;
-}
+
 
 
 
@@ -97,7 +81,7 @@ tr {
     justify-content: center;
     box-sizing: border-box;
     width: 80%;
-	font-weight: bold;
+	text-decoration: none;
 }
 
 .list_demand li {
@@ -112,7 +96,13 @@ tr {
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
     transition: color 0.3s;
+	font-family: "微軟正黑體";
+	font-size:15px;
+	line-height: 15px;
+	color: #333333;
+	text-decoration: none;
 }
+
 
 .list_demand li + li {
     margin-left: 10px;
@@ -456,15 +446,6 @@ div.tab_container .tab_content h2 {
 
 
 
-table {
-	width: 100%!important;
-    border-collapse: collapse;
-    border-spacing: 0;
-	padding:0 0;
-	margin:0 0;
-    display: block;
-	overflow-x: scroll;
-}
 .content th {
     padding: 10px;
     text-align: center;
@@ -491,11 +472,13 @@ table {
 }
 
 .copy-sn {
-    padding: 5px 10px;
-    margin-left: 10px;
-    border: 1px solid #ddd;
+    padding: 4px 10px;
     border-radius: 5px;
-    background-color: #30bb74;
+	border:none;
+    background-color: #eb510e;
+	font-family: "微軟正黑體";
+	font-size:11px;
+	line-height: 11px;
     color: #FFF;
     cursor: pointer;
 }

@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html>
+<html lang["zh-tw">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scaleble=yes, initial-scale=1.0, maximum-scale=2.0" />
+
+<title>地下城與勇士養成 儲值商店</title>
+<meta name="description" content="地下城與勇士養成, NEXON Company, 遊戲,角色扮演, MMORPG, MyCard APP, 儲值,禮包,商店,教學,點數">
+<meta name="description" content="地下城與勇士養成" />
+<meta property="og:title" content="地下城與勇士養成 儲值商店" />
+<meta property="og:type" content="website" />
+<!-- 到時候放上線的正式網址 -->
+<meta property="og:url" content="到時候放上線的正式網址" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="地下城與勇士養成" />
+<meta property="og:site_name" content="MyCard" />
+
+
+<link rel="stylesheet" href="css/L.css">
+<link rel="stylesheet" href="css/LM.css" media="only screen and (min-width:1025px) and (max-width:1680px)">
+<link rel="stylesheet" href="css/M.css" media="only screen and (min-width:600px) and (max-width:1024px)">
+<link rel="stylesheet" href="css/S.css" media="only screen and (max-width:599px)">
+<link rel="stylesheet" href="css/style.css">	
+<link rel="stylesheet" href="css/flatpickr.css" />
+
+<!-- jquery引入檔 -->
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/flatpickr.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+	
+	<script src="https://image.mycard520.com/GangStart/js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+	
+<!-- google fonts 字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+<!-- 導覽列 -->
+    <nav>
+        <div class="nav_box">
+            <div class="logo">
+                <img src="https://image.mycard520.com/maplestorym/images/nexon_w.png" alt="">
+            </div>
+
+            <div class="burger_menu">
+                <div class="burger_menu_box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <ul class="menu_box">
+                <li id="nav_front_page">
+                    <a target="_self" href="index.html">首頁</a>
+                </li>
+                <li id="nav_mall" class="itembox drop-down">
+                    <a class="active" target="_self" href="index.html">台灣商店</a>
+                </li>
+                <li id="nav_mall" class="itembox drop-down">
+                    <a target="_self" href="index2.html">港澳商店</a>
+                </li>
+                <li id="nav_record">
+                    <a target="_self" href="record.html">購買紀錄查詢</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- 如何查詢會員代碼彈窗 -->	
+<div id="callout">
+	<div id="callout_close"><img src="img/btn_close.svg"/></div>
+	<h1>如何查詢會員代碼？</h1>
+	<ul>
+	  <h2>Step1：遊戲右上角漢堡選單</h2>
+	  <li><img src="img/uid_001.png"></li>
+	  <h2>Step2：右下角「環境設定」進入</h2>
+	  <li><img src="img/uid_002.png"></li>
+	  <h2>Step3：在「帳號」頁籤即能得到會員代碼</h2>
+	  <li><img src="img/uid_003.png"></li>
+	</ul>
+</div>		
+	
+	
+<!-- 主視覺 -->
+<div id="wrapper">
+    <div class="login">
+	  <div id="tab">
+		  <div id="tab1" class="tab1r">購買記錄查詢</div>
+		  <div id="tab1" class="tab1">購買記錄查詢</div>
+		  <div id="tab2" class="tab2r">活動獎項查詢</div>
+		  <div id="tab2" class="tab2">活動獎項查詢</div>
+	  </div>
+	  <div id="purchase_history">
+		<ul id="how"><li><ol><img src="img/login_question_icon.svg"></ol>如何查詢會員代碼？ </li></ul>
+		<ul id="search_ID">
+		  <dl>遊戲帳號</dl>
+		  <div class="ID"><input id="" type="text" name="" placeholder="請輸入會員代碼"></input></div>
+		</ul>
+		<ul id="search_team">
+		  <div class="team">冒險團名稱</div>
+          <div class="name">TEST_NAME</div>
+          <div class="LV">LV.55</div>
+	    </ul>
+	    <div class="date">
+                    <div class="title_box">
+                        <label for="">查詢日期</label>
+                    </div>
+                    <div class="calendar_box">
+                        <input class="date_se flatpickr select_date calendar flatpickr-iput" type="text" placeholder="2023-11-07" readonly="readonly">
+                        <span>~</span>
+                        <input class="date_se flatpickr select_date calendar right flatpickr-iput" type="text" placeholder="2023-11-07" readonly="readonly">
+                        <script>flatpickr(".flatpickr")</script>
+                    </div>
+                    <div class="error">網站內容問題請洽網站客服<br>若為交易問題請撥打(02)26510754</div>
+			        <div id="btn_search1" class="btn_search">立即查詢</div>
+			        <a target="_self" href="index.html"><div id="btn_research1" class="btn_search2">重新查詢</div></a>
+	    </div>
+      </div>
+	  <div id="event_awards">
+		<ul id="how2"><li><ol><img src="img/login_question_icon.svg"></ol>如何查詢會員代碼？ </li></ul>
+		<ul id="search_ID2">
+		  <dl>遊戲帳號</dl>
+		  <div class="ID"><input id="" type="text" name="" placeholder="請輸入會員代碼"></input></div>
+		</ul>
+	    <ul id="search_mycard">
+		  <dl>交易序號</dl>
+		  <div class="ID"><input id="" type="text" name="" placeholder="請輸入MyCard交易序號"></input></div>
+		</ul>
+	    <ul id="search_team2">
+		  <div class="team">冒險團名稱</div>
+          <div class="name">TEST_NAME</div>
+          <div class="LV">LV.55</div>
+	    </ul>
+	    <div class="date">
+			<div class="error">網站內容問題請洽網站客服<br>若為交易問題請撥打(02)26510754</div>
+			<div id="btn_search2" class="btn_search">立即查詢</div>
+			<a target="_self" href="index.html"><div id="btn_research2" class="btn_search2">重新查詢</div></a>
+	    </div>
+      </div>
+    </div>
+
+<!---->
+  <div id="search_result_title"><img src="img/search_result_title.webp"></div>
+	<div id="search_result" class="form1">
+<table class="form" width="100%">
+    <thead>
+        <tr>
+            <th bgcolor="#a7a7a7">訂單編號</th>
+            <th bgcolor="#a7a7a7">MyCard交易序號</th>
+            <th bgcolor="#a7a7a7">購買時間</th>
+            <th bgcolor="#a7a7a7">商品價格</th>
+            <th bgcolor="#a7a7a7">購買商品</th>
+            <th bgcolor="#a7a7a7">訂單狀態</th>
+			<th bgcolor="#a7a7a7">獲獎狀態</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">170元</td>
+            <td bgcolor="#ffffff">120鑽石-一次限定</td>
+            <td bgcolor="#ffffff">購買成功</td>
+            <td bgcolor="#ffffff">有獲獎</td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">60鑽石</td>
+            <td bgcolor="#efefef">處理中</td>
+            <td bgcolor="#efefef">有獲獎</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">1980元</td>
+            <td bgcolor="#ffffff">60鑽石</td>
+            <td bgcolor="#ffffff">處理中</td>
+            <td bgcolor="#ffffff">有獲獎</td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">120鑽石-一次限定</td>
+            <td bgcolor="#efefef">處理中</td>
+            <td bgcolor="#efefef">無獲獎</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">60鑽石</td>
+            <td bgcolor="#ffffff">120鑽石-一次限定</td>
+            <td bgcolor="#ffffff">處理中</td>
+            <td bgcolor="#ffffff">有獲獎</td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">120鑽石-一次限定</td>
+            <td bgcolor="#efefef">處理中</td>
+            <td bgcolor="#efefef">無獲獎</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">1980元</td>
+            <td bgcolor="#ffffff">120鑽石-一次限定</td>
+            <td bgcolor="#ffffff">購買成功</td>
+            <td bgcolor="#ffffff">有獲獎</td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">30鑽石</td>
+            <td bgcolor="#efefef">處理中</td>
+            <td bgcolor="#efefef">無獲獎</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">1980元</td>
+            <td bgcolor="#ffffff">120鑽石-一次限定</td>
+            <td bgcolor="#ffffff">購買成功</td>
+            <td bgcolor="#ffffff">無獲獎</td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">120鑽石-一次限定</td>
+            <td bgcolor="#efefef">購買成功</td>
+            <td bgcolor="#efefef">無獲獎</td>
+        </tr>
+    </tbody>
+</table>
+                                        <ul class="list_demand">
+                                            <li><a class="link_demand" href=" ">1</a></li>
+                                            <li><a class="link_demand" href=" ">2</a></li>
+                                            <li><a class="link_demand" href=" ">3</a></li>
+                                        </ul>
+	</div>
+        
+<!--活動獎項查詢-->
+    	<div id="search_result" class="form2">
+<table class="form" width="100%">
+    <thead>
+        <tr>
+            <th bgcolor="#a7a7a7">訂單編號</th>
+            <th bgcolor="#a7a7a7">MyCard交易序號</th>
+            <th bgcolor="#a7a7a7">購買時間</th>
+            <th bgcolor="#a7a7a7">商品價格</th>
+            <th bgcolor="#a7a7a7">購買商品</th>
+            <th bgcolor="#a7a7a7">訂單狀態</th>
+			<th bgcolor="#a7a7a7">活動名稱</th>
+			<th bgcolor="#a7a7a7">獎項名稱</th>
+			<th bgcolor="#a7a7a7">獎勵序號</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca29</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">170元</td>
+            <td bgcolor="#ffffff">120鑽石-一次限定</td>
+            <td bgcolor="#ffffff">購買成功</td>
+			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
+			<td bgcolor="#ffffff">神祕寶藏</td>
+			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca29</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">60鑽石</td>
+            <td bgcolor="#efefef">處理中</td>
+			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
+			<td bgcolor="#efefef">神祕寶藏</td>
+			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca29</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">1980元</td>
+            <td bgcolor="#ffffff">60鑽石</td>
+            <td bgcolor="#ffffff">處理中</td>
+			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
+			<td bgcolor="#ffffff">神祕寶藏</td>
+			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca29</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">120鑽石-一次限定</td>
+            <td bgcolor="#efefef">處理中</td>
+			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
+			<td bgcolor="#efefef">神祕寶藏</td>
+			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca29</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">60鑽石</td>
+            <td bgcolor="#ffffff">120鑽石-一次限定</td>
+            <td bgcolor="#ffffff">處理中</td>
+			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
+			<td bgcolor="#ffffff">神祕寶藏</td>
+			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca29</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">120鑽石-一次限定</td>
+            <td bgcolor="#efefef">處理中</td>
+			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
+			<td bgcolor="#efefef">神祕寶藏</td>
+			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca29</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">1980元</td>
+            <td bgcolor="#ffffff">120鑽石-一次限定</td>
+            <td bgcolor="#ffffff">購買成功</td>
+			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
+			<td bgcolor="#ffffff">神祕寶藏</td>
+			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca29</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">30鑽石</td>
+            <td bgcolor="#efefef">處理中</td>
+			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
+			<td bgcolor="#efefef">神祕寶藏</td>
+			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">633b07b8d624f643ca29</td>
+            <td bgcolor="#ffffff">CGM2211240014312</td>
+            <td bgcolor="#ffffff">2022-10-04 11:36</td>
+            <td bgcolor="#ffffff">1980元</td>
+            <td bgcolor="#ffffff">120鑽石-一次限定</td>
+            <td bgcolor="#ffffff">購買成功</td>
+			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
+			<td bgcolor="#ffffff">神祕寶藏</td>
+			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="#efefef">633b07b8d624f643ca29</td>
+            <td bgcolor="#efefef">CGM2211240014312</td>
+            <td bgcolor="#efefef">2022-10-04 11:36</td>
+            <td bgcolor="#efefef">1980元</td>
+            <td bgcolor="#efefef">120鑽石-一次限定</td>
+            <td bgcolor="#efefef">購買成功</td>
+			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
+			<td bgcolor="#efefef">神祕寶藏</td>
+			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
+        </tr>
+    </tbody>
+</table>
+                                        <ul class="list_demand">
+                                            <li><a class="link_demand" href=" ">1</a></li>
+                                            <li><a class="link_demand" href=" ">2</a></li>
+                                            <li><a class="link_demand" href=" ">3</a></li>
+                                        </ul>
+	</div>
+	
+  <div id="footer">
+	    <div class="terms2"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
+		<ul><img src="img/class12.png"></ul>
+		<li>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容<br>
+本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務<br>
+請注意遊戲時間，避免沉迷</li>
+	    <ol>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容。本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務。請注意遊戲時間，避免沉迷</ol>
+	    <dd><img src="img/mycard_logo.svg"></dd>
+        <dl><img src="img/nexon_w.png"></dl>
+		<div class="terms"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
+	  
+	</div>
+</div>
+
+    <script>
+        $(document).ready(function () {
+
+            // 複製序號
+            $(".copy-sn").click(function () {
+                const snText = $(this).siblings(".sn").text();
+                const tempInput = $("<input>");
+                $("body").append(tempInput);
+                tempInput.val(snText).select();
+                document.execCommand("copy");
+                tempInput.remove();
+                alert("序號已複製");
+            });
+
+            // 日曆開始
+            // 監聽datepicker按鈕
+            function initCalendar($el, options, formatCallback) {
+                $el.daterangepicker(options);
+
+                // 監聽 apply 事件，點「確認」才填值
+                $el.on("apply.daterangepicker", function (ev, picker) {
+                    $(this).val(formatCallback(picker));
+                });
+
+                // 監聽 cancel 事件，點「清除」清空
+                $el.on("cancel.daterangepicker", function () {
+                    $(this).val("");
+                });
+            }
+
+            // 區間選取
+            $('input[name="datefilter"]').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    format: "YYYY/MM/DD", // 這行設定 drp-selected 日期格式
+                    cancelLabel: '清除',
+                    applyLabel: "確認",
+                }
+            });
+
+            $('input[name="datefilter"]').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format('YYYY/MM/DD'));
+            });
+
+            $('input[name="datefilter"]').on('cancel.daterangepicker', function (ev, picker) {
+                $(this).val('');
+            });
+            // 日曆結束
+        });
+    </script>
+</body>
+
+</html>
