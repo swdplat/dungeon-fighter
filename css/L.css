@@ -1405,7 +1405,7 @@ table {
     display: block;
 	overflow-x: scroll;
 	width: 100vw;  /* 寬度撐滿視窗 */
-    height: 100% /* 高度撐滿視窗 */
+    height: 100%; /* 高度撐滿視窗 */
     border-collapse: collapse; /* 消除儲存格間距 */
 	outline:1px solid #666666;
 }
