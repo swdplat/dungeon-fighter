@@ -515,7 +515,7 @@ nav .nav_box .login_box select {
 }
 #wrapper .login ul ol img {width:100%;}
 #wrapper .login ul dl {
-    width:26%;
+    width:28%;
 	margin:0 1% 0 0;
 	padding:2% 0;
 	font-family: "微軟正黑體";
@@ -528,7 +528,7 @@ nav .nav_box .login_box select {
 	float:left;
 }
 #wrapper .login ul dt {
-    width:54%;
+    width:52%;
 	margin:0 1% 0 0;
 	padding:0 0;
 	display:inline;
@@ -739,8 +739,8 @@ nav .nav_box .login_box select {
 	margin:0 2% 2% 2%;
 	padding:2% 2%;
 	font-family: "微軟正黑體";
-	font-size:22px;
-	line-height: 22px;
+	font-size:20px;
+	line-height: 20px;
 	font-weight: bold;
 	color: #e0504c;
 	text-align:center;
@@ -1075,7 +1075,7 @@ nav .nav_box .login_box select {
 }
 #wrapper .record ul ol img {width:100%;}
 #wrapper .record ul dl {
-	width:26%;
+	width:29%;
 	height:auto;
 	margin:1% 1% 0 0;
 	padding:1% 0;
@@ -1089,7 +1089,7 @@ nav .nav_box .login_box select {
 	float:left;
 }
 #wrapper .record ul .ID {
-    width:72%;
+    width:69%;
 	margin:0 0% 0 0;
 	padding:0 0;
 	display:inline;
@@ -1138,7 +1138,7 @@ nav .nav_box .login_box select {
 	margin:2% 0% 0% 0%;
 	padding:3% 0;
 	font-family: "微軟正黑體";
-	font-size:22px;
+	font-size:20px;
 	line-height: 22px;
 	font-weight: bold;
 	text-align:center;
@@ -1151,7 +1151,7 @@ nav .nav_box .login_box select {
 	margin:2% 0% 0% 0% ;
 	padding:3% 0;
 	font-family: "微軟正黑體";
-	font-size:22px;
+	font-size:20px;
 	line-height: 22px;
 	font-weight: bold;
 	text-align:center;
@@ -1474,7 +1474,7 @@ input {
 }
 
 select {
-	width:99.5%;
+	width:93.5%;
 	height:auto;
 	margin:0 0;
 	padding:1.7% 2%;
