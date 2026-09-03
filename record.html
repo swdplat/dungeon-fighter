@@ -23,16 +23,21 @@
 <link rel="stylesheet" href="css/S.css" media="only screen and (max-width:599px)">
 <link rel="stylesheet" href="css/style.css">	
 <link rel="stylesheet" href="css/flatpickr.css" />
-
+<link rel="stylesheet" href="css/daterangepicker.css" />
+	
 <!-- jquery引入檔 -->
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/flatpickr.js"></script>
 <script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/callout.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+
+
 	
-	<script src="https://image.mycard520.com/GangStart/js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/moment.min.js"></script>
+	<script src="https://image.mycard520.com/GangStart/js/jquery.min.js"></script>
+	
+    
 	
 <!-- google fonts 字型 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,11 +63,9 @@
                     <span></span>
                 </div>
             </div>
+            
 
             <ul class="menu_box">
-                <li id="nav_front_page">
-                    <a target="_self" href="index.html">首頁</a>
-                </li>
                 <li id="nav_mall" class="itembox drop-down">
                     <a class="active" target="_self" href="index.html">台灣商店</a>
                 </li>
@@ -73,10 +76,23 @@
                     <a target="_self" href="record.html">購買紀錄查詢</a>
                 </li>
             </ul>
+			
+			<ul class="login_box">
+			  <div id="nav_login_btn">登入</div>
+			  <div class="nav_team">冒險團名稱：</div>
+			  <div class="nav_name">
+		          <select>
+		            <option value="chara1">TEST_NAME&ensp;LV.55</option>
+		            <option value="chara2">龍神奧爾斯帝德&ensp;</option>
+		            <option value="chara3">北神三世</span>&ensp;</option>
+		            <option value="chara3">金州四爺湯普森</span>&ensp;</option>
+		            <option value="chara3">五筒</span>&ensp;</option>
+		          </select>
+		      </div>
+            </ul>
         </div>
     </nav>
 
-<!-- 如何查詢會員代碼彈窗 -->	
 <div id="callout">
 	<div id="callout_close"><img src="img/btn_close.svg"/></div>
 	<h1>如何查詢會員代碼？</h1>
@@ -93,7 +109,29 @@
 	
 <!-- 主視覺 -->
 <div id="wrapper">
+  <div id="login_callout">
+	<div id="login_callout_close"><img src="img/btn_close.svg"></div>
+	<h6>登入</h6>
     <div class="login">
+		<h1>帳號資訊</h1>
+		<h2>正在使用的是台灣商店</h2>
+		<ul id="member_ID">
+		  <dl>遊戲帳號</dl>
+			<dt><input id="" type="text" name="" placeholder="請輸入會員代碼"></input></dt>
+		  <dd id="id_submit">送出</dd>
+		</ul>
+	    <ul id="how2">
+		  <li><ol><img src="img/login_question_icon.svg"></ol>如何查詢會員代碼？ </li>
+		</ul>
+	    <div class="error">
+			遊戲帳號/會員代碼輸入有誤 <br>
+            載入資料發生錯誤，請稍後再試！<br>
+            伺服器/儲值角色輸入有誤 
+	    </div>
+      </div>
+  </div>
+
+    <div class="record">
 	  <div id="tab">
 		  <div id="tab1" class="tab1r">購買記錄查詢</div>
 		  <div id="tab1" class="tab1">購買記錄查詢</div>
@@ -101,57 +139,70 @@
 		  <div id="tab2" class="tab2">活動獎項查詢</div>
 	  </div>
 	  <div id="purchase_history">
-		<ul id="how"><li><ol><img src="img/login_question_icon.svg"></ol>如何查詢會員代碼？ </li></ul>
 		<ul id="search_ID">
-		  <dl>遊戲帳號</dl>
+		  <dl>會員代碼</dl>
 		  <div class="ID"><input id="" type="text" name="" placeholder="請輸入會員代碼"></input></div>
 		</ul>
+		<ul id="how4"><li>如何查詢會員代碼？</li><ol><img src="img/login_question_icon.svg"></ol></ul>
 		<ul id="search_team">
-		  <div class="team">冒險團名稱</div>
-          <div class="name">TEST_NAME</div>
-          <div class="LV">LV.55</div>
+		  <dl>冒險團名稱</dl>
+		  <div class="ID">
+		  	  <select>
+				<option value="chara1"><span class="text_black">所有冒險團</span>&emsp;</option>
+			    <option value="chara1"><span class="text_black">TEST_NAME</span>&emsp;<span class="text_red">LV.55</span></option>
+			    <option value="chara2"><span class="text_black">龍神奧爾斯帝德</span>&emsp;<span class="text_red">LV.55</span></option>
+			    <option value="chara3"><span class="text_black">北神三世</span>&emsp;<span class="text_red">LV.55</span></option>
+				<option value="chara3"><span class="text_black">金州四爺湯普森</span>&emsp;<span class="text_red">LV.55</span></option>
+				<option value="chara3"><span class="text_black">五筒</span>&emsp;<span class="text_red">LV.55</span></option>
+              </select>
+			</div>
 	    </ul>
 	    <div class="date">
                     <div class="title_box">
                         <label for="">查詢日期</label>
                     </div>
-                    <div class="calendar_box">
-                        <input class="date_se flatpickr select_date calendar flatpickr-iput" type="text" placeholder="2023-11-07" readonly="readonly">
-                        <span>~</span>
-                        <input class="date_se flatpickr select_date calendar right flatpickr-iput" type="text" placeholder="2023-11-07" readonly="readonly">
-                        <script>flatpickr(".flatpickr")</script>
-                    </div>
+                    <label><input class="input" type="text" name="datefilter" class="calendar" autocomplete="off" placeholder="開始時間 - 結束時間"></label>
                     <div class="error">網站內容問題請洽網站客服<br>若為交易問題請撥打(02)26510754</div>
+			        <div id="btn_submit1" class="btn_search">送出</div>
 			        <div id="btn_search1" class="btn_search">立即查詢</div>
-			        <a target="_self" href="index.html"><div id="btn_research1" class="btn_search2">重新查詢</div></a>
+			        <div id="btn_research1" class="btn_search">重新查詢</div>
 	    </div>
       </div>
 	  <div id="event_awards">
-		<ul id="how2"><li><ol><img src="img/login_question_icon.svg"></ol>如何查詢會員代碼？ </li></ul>
 		<ul id="search_ID2">
-		  <dl>遊戲帳號</dl>
+		  <dl>會員代碼</dl>
 		  <div class="ID"><input id="" type="text" name="" placeholder="請輸入會員代碼"></input></div>
 		</ul>
+        <ul id="how3"><li>如何查詢會員代碼？</li><ol><img src="img/login_question_icon.svg"></ol></ul>
+        <ul id="search_team2">
+		  <dl>冒險團名稱</dl>
+		  <div class="ID">
+			  <select>
+				<option value="chara1"><span class="text_black">所有冒險團</span>&emsp;</option>
+			    <option value="chara1"><span class="text_black">TEST_NAME</span>&emsp;<span class="text_red">LV.55</span></option>
+			    <option value="chara2"><span class="text_black">龍神奧爾斯帝德</span>&emsp;<span class="text_red">LV.55</span></option>
+			    <option value="chara3"><span class="text_black">北神三世</span>&emsp;<span class="text_red">LV.55</span></option>
+				<option value="chara3"><span class="text_black">金州四爺湯普森</span>&emsp;<span class="text_red">LV.55</span></option>
+				<option value="chara3"><span class="text_black">五筒</span>&emsp;<span class="text_red">LV.55</span></option>
+              </select>
+			</div>
+	    </ul>
 	    <ul id="search_mycard">
 		  <dl>交易序號</dl>
 		  <div class="ID"><input id="" type="text" name="" placeholder="請輸入MyCard交易序號"></input></div>
-		</ul>
-	    <ul id="search_team2">
-		  <div class="team">冒險團名稱</div>
-          <div class="name">TEST_NAME</div>
-          <div class="LV">LV.55</div>
-	    </ul>
+		</ul> 
 	    <div class="date">
 			<div class="error">網站內容問題請洽網站客服<br>若為交易問題請撥打(02)26510754</div>
-			<div id="btn_search2" class="btn_search">立即查詢</div>
-			<a target="_self" href="index.html"><div id="btn_research2" class="btn_search2">重新查詢</div></a>
+			<div id="btn_submit2" class="btn_search">送出</div>
+			<div id="btn_search2" class="btn_search2">立即查詢</div>
 	    </div>
       </div>
     </div>
 
-<!---->
-  <div id="search_result_title"><img src="img/search_result_title.webp"></div>
+<!--查詢結果-->
+    <div id="search_result_space"></div>
 	<div id="search_result" class="form1">
+	  <div id="search_result_title">查詢結果</div>
 <table class="form" width="100%">
     <thead>
         <tr>
@@ -161,7 +212,7 @@
             <th bgcolor="#a7a7a7">商品價格</th>
             <th bgcolor="#a7a7a7">購買商品</th>
             <th bgcolor="#a7a7a7">訂單狀態</th>
-			<th bgcolor="#a7a7a7">獲獎狀態</th>
+			<th bgcolor="#a7a7a7">冒險團名稱</th>
         </tr>
     </thead>
 
@@ -173,7 +224,7 @@
             <td bgcolor="#ffffff">170元</td>
             <td bgcolor="#ffffff">120鑽石-一次限定</td>
             <td bgcolor="#ffffff">購買成功</td>
-            <td bgcolor="#ffffff">有獲獎</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
         </tr>
         <tr>
             <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
@@ -182,7 +233,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">60鑽石</td>
             <td bgcolor="#efefef">處理中</td>
-            <td bgcolor="#efefef">有獲獎</td>
+			<th bgcolor="#efefef">角色名稱2</th>
         </tr>
         <tr>
             <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
@@ -191,7 +242,7 @@
             <td bgcolor="#ffffff">1980元</td>
             <td bgcolor="#ffffff">60鑽石</td>
             <td bgcolor="#ffffff">處理中</td>
-            <td bgcolor="#ffffff">有獲獎</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
         </tr>
         <tr>
             <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
@@ -200,7 +251,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">120鑽石-一次限定</td>
             <td bgcolor="#efefef">處理中</td>
-            <td bgcolor="#efefef">無獲獎</td>
+			<th bgcolor="#efefef">角色名稱2</th>
         </tr>
         <tr>
             <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
@@ -209,7 +260,7 @@
             <td bgcolor="#ffffff">60鑽石</td>
             <td bgcolor="#ffffff">120鑽石-一次限定</td>
             <td bgcolor="#ffffff">處理中</td>
-            <td bgcolor="#ffffff">有獲獎</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
         </tr>
         <tr>
             <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
@@ -218,7 +269,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">120鑽石-一次限定</td>
             <td bgcolor="#efefef">處理中</td>
-            <td bgcolor="#efefef">無獲獎</td>
+			<th bgcolor="#efefef">角色名稱2</th>
         </tr>
         <tr>
             <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
@@ -227,7 +278,7 @@
             <td bgcolor="#ffffff">1980元</td>
             <td bgcolor="#ffffff">120鑽石-一次限定</td>
             <td bgcolor="#ffffff">購買成功</td>
-            <td bgcolor="#ffffff">有獲獎</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
         </tr>
         <tr>
             <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
@@ -236,7 +287,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">30鑽石</td>
             <td bgcolor="#efefef">處理中</td>
-            <td bgcolor="#efefef">無獲獎</td>
+			<th bgcolor="#efefef">角色名稱2</th>
         </tr>
         <tr>
             <td bgcolor="#ffffff">633b07b8d624f643ca293219</td>
@@ -245,7 +296,7 @@
             <td bgcolor="#ffffff">1980元</td>
             <td bgcolor="#ffffff">120鑽石-一次限定</td>
             <td bgcolor="#ffffff">購買成功</td>
-            <td bgcolor="#ffffff">無獲獎</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
         </tr>
         <tr>
             <td bgcolor="#efefef">633b07b8d624f643ca293219</td>
@@ -254,7 +305,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">120鑽石-一次限定</td>
             <td bgcolor="#efefef">購買成功</td>
-            <td bgcolor="#efefef">無獲獎</td>
+			<th bgcolor="#efefef">角色名稱2</th>
         </tr>
     </tbody>
 </table>
@@ -267,6 +318,7 @@
         
 <!--活動獎項查詢-->
     	<div id="search_result" class="form2">
+		<div id="search_result_title">查詢結果</div>
 <table class="form" width="100%">
     <thead>
         <tr>
@@ -279,6 +331,7 @@
 			<th bgcolor="#a7a7a7">活動名稱</th>
 			<th bgcolor="#a7a7a7">獎項名稱</th>
 			<th bgcolor="#a7a7a7">獎勵序號</th>
+			<th bgcolor="#a7a7a7">冒險團名稱</th>
         </tr>
     </thead>
 
@@ -290,6 +343,7 @@
             <td bgcolor="#ffffff">170元</td>
             <td bgcolor="#ffffff">120鑽石-一次限定</td>
             <td bgcolor="#ffffff">購買成功</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
 			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
 			<td bgcolor="#ffffff">神祕寶藏</td>
 			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -301,6 +355,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">60鑽石</td>
             <td bgcolor="#efefef">處理中</td>
+			<th bgcolor="#efefef">角色名稱2</th>
 			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
 			<td bgcolor="#efefef">神祕寶藏</td>
 			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -312,6 +367,7 @@
             <td bgcolor="#ffffff">1980元</td>
             <td bgcolor="#ffffff">60鑽石</td>
             <td bgcolor="#ffffff">處理中</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
 			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
 			<td bgcolor="#ffffff">神祕寶藏</td>
 			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -323,6 +379,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">120鑽石-一次限定</td>
             <td bgcolor="#efefef">處理中</td>
+			<th bgcolor="#efefef">角色名稱2</th>
 			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
 			<td bgcolor="#efefef">神祕寶藏</td>
 			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -334,6 +391,7 @@
             <td bgcolor="#ffffff">60鑽石</td>
             <td bgcolor="#ffffff">120鑽石-一次限定</td>
             <td bgcolor="#ffffff">處理中</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
 			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
 			<td bgcolor="#ffffff">神祕寶藏</td>
 			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -345,6 +403,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">120鑽石-一次限定</td>
             <td bgcolor="#efefef">處理中</td>
+			<th bgcolor="#efefef">角色名稱2</th>
 			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
 			<td bgcolor="#efefef">神祕寶藏</td>
 			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -356,6 +415,7 @@
             <td bgcolor="#ffffff">1980元</td>
             <td bgcolor="#ffffff">120鑽石-一次限定</td>
             <td bgcolor="#ffffff">購買成功</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
 			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
 			<td bgcolor="#ffffff">神祕寶藏</td>
 			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -367,6 +427,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">30鑽石</td>
             <td bgcolor="#efefef">處理中</td>
+			<th bgcolor="#efefef">角色名稱2</th>
 			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
 			<td bgcolor="#efefef">神祕寶藏</td>
 			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -378,6 +439,7 @@
             <td bgcolor="#ffffff">1980元</td>
             <td bgcolor="#ffffff">120鑽石-一次限定</td>
             <td bgcolor="#ffffff">購買成功</td>
+			<th bgcolor="#ffffff">角色名稱1</th>
 			<td bgcolor="#ffffff">冒險者的寶藏尋獲</td>
 			<td bgcolor="#ffffff">神祕寶藏</td>
 			<td bgcolor="#ffffff"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -389,6 +451,7 @@
             <td bgcolor="#efefef">1980元</td>
             <td bgcolor="#efefef">120鑽石-一次限定</td>
             <td bgcolor="#efefef">購買成功</td>
+			<th bgcolor="#efefef">角色名稱2</th>
 			<td bgcolor="#efefef">冒險者的寶藏尋獲</td>
 			<td bgcolor="#efefef">神祕寶藏</td>
 			<td bgcolor="#efefef"><span class="sn">A1B2C3D4E5F6G7H8I9</span><br><button class="copy-sn">複製</button></td>
@@ -402,20 +465,20 @@
                                         </ul>
 	</div>
 	
-  <div id="footer">
-	    <div class="terms2"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
-		<ul><img src="img/class12.png"></ul>
-		<li>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容<br>
+   <div id="footer">
+	    <ul><img src="img/class12.png"></ul>
+	    <li>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容<br>
 本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務<br>
 請注意遊戲時間，避免沉迷</li>
-	    <ol>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容。本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務。請注意遊戲時間，避免沉迷</ol>
+	    <ol>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容。本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務。請注意遊戲時間，避免沉迷</ol>	  
+	    <div class="terms2"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>		
 	    <dd><img src="img/mycard_logo.svg"></dd>
         <dl><img src="img/nexon_w.png"></dl>
 		<div class="terms"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
-	  
 	</div>
 </div>
-
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.min.js"></script>
     <script>
         $(document).ready(function () {
 

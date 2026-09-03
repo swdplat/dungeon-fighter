@@ -27,6 +27,7 @@
 <!-- jquery引入檔 -->
 <script src="js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/callout.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
 	
@@ -44,7 +45,7 @@
     <nav>
         <div class="nav_box">
             <div class="logo">
-                <img src="https://image.mycard520.com/maplestorym/images/nexon_w.png" alt="">
+                <img src="img/game_logo.png" alt="">
             </div>
 
             <div class="burger_menu">
@@ -54,11 +55,9 @@
                     <span></span>
                 </div>
             </div>
+            
 
             <ul class="menu_box">
-                <li id="nav_front_page">
-                    <a target="_self" href="index.html">首頁</a>
-                </li>
                 <li id="nav_mall" class="itembox drop-down">
                     <a class="active" target="_self" href="index.html">台灣商店</a>
                 </li>
@@ -68,6 +67,20 @@
                 <li id="nav_record">
                     <a target="_self" href="record.html">購買紀錄查詢</a>
                 </li>
+            </ul>
+			
+			<ul class="login_box">
+			  <div id="nav_login_btn">登入</div>
+			  <div class="nav_team">冒險團名稱：</div>
+			  <div class="nav_name">
+		          <select>
+		            <option value="chara1">TEST_NAME&ensp;LV.55</option>
+		            <option value="chara2">龍神奧爾斯帝德&ensp;</option>
+		            <option value="chara3">北神三世</span>&ensp;</option>
+		            <option value="chara3">金州四爺湯普森</span>&ensp;</option>
+		            <option value="chara3">五筒</span>&ensp;</option>
+		          </select>
+		      </div>
             </ul>
         </div>
     </nav>
@@ -88,52 +101,135 @@
 	
 <!-- 主視覺 -->
 <div id="wrapper">
-	<div class="login">
+  <div class="main_visual"><img id="PC"src="img/main_visual.webp"><img id="TABLE"src="img/main_visual.webp"><img id="MOBILE" src="img/main_visual_m.webp"></div>
+  <div id="login_callout">
+	<div id="login_callout_close"><img src="img/btn_close.svg"></div>
+	<h6>登入</h6>
+    <div class="login">
 		<h1>帳號資訊</h1>
 		<h2>正在使用的是台灣商店</h2>
 		<ul id="member_ID">
-		  <dl>遊戲帳號</dl>
+		  <dl>會員代碼</dl>
 			<dt><input id="" type="text" name="" placeholder="請輸入會員代碼"></input></dt>
 		  <dd id="id_submit">送出</dd>
 		</ul>
-	    <ul id="how">
+	    <ul id="how1">
 		  <li><ol><img src="img/login_question_icon.svg"></ol>如何查詢會員代碼？ </li>
 		</ul>
-	    <ul id="server">
-		  <div class="team">冒險團名稱</div>
-          <div class="name">TEST_NAME</div>
-          <div class="LV">LV.55</div>
-	    </ul>
-	    <a target="_self" href="index.html"><div class="btn_confirm">重新查詢</div></a>
 	    <div class="error">
 			遊戲帳號/會員代碼輸入有誤 <br>
             載入資料發生錯誤，請稍後再試！<br>
             伺服器/儲值角色輸入有誤 
 	    </div>
-    </div>
+      </div>
+  </div>
 	
-  <div id="tresure_title"><img src="img/tresure_title.webp"></div>
-	<div id="tresure_box">
+  <div id="tresure_title">
+    <ul>
+	  <li id="tresure_tab1" class="off">禮包</li>
+	  <li id="tresure_tab2" class="on">賽拉幣</li>
+	  <li id="tresure_tab3" class="off">道具</li>
+	</ul>
+  </div>
+
+    <!--禮包-->
+	<div id="tresure_box" class="tb1">
 	    <li>
-		  <dl><img src="img/nexon.dfidle_cera_6000.png"></dl>
-		  <dd>遊戲幣遊戲幣遊戲幣遊戲幣遊戲幣遊戲幣遊戲</dd>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 6,000賽拉</dd>
 		  <dt>$290</dt>
-		  <div class="buy">購買</div>
+		  <a target="_self" href="buy_success.html"><div class="buy">購買</div></a>
 		</li>
 		<li>
-		  <dl><img src="img/nexon.dfidle_cera_12000.png"></dl>
+		  <div id="sticker">熱銷</div>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
 		  <dd>遊戲幣 12,000賽拉</dd>
 		  <dt>$570</dt>
-		  <div class="buy">購買</div>
+			<a target="_self" href="buy_fail.html"><div class="buy">購買</div></a>
 		</li>
-		<li>
+		<li>  
 		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
 		  <dd>遊戲幣 30,000賽拉</dd>
 		  <dt>$1,420</dt>
 		  <div class="buy">購買</div>
 		</li>
 		<li>
+		  <div id="sticker">10%OFF</div>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 69,000賽拉</dd>
+		  <dt>$2,980</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 149,000賽拉</dd>
+		  <dt>$4,980</dt>
+		  <div class="buy">購買</div>
+		</li>
+	</div>
+
+    <!--賽拉幣-->
+	<div id="tresure_box" class="tb2">
+	    <li>
+		  <div id="sticker">熱銷</div>
+		  <dl><img src="img/nexon.dfidle_cera_6000.png"></dl>
+		  <dd>遊戲幣 6,000賽拉</dd>
+		  <dt>$290</dt>
+		  <a target="_self" href="buy_success.html"><div class="buy">購買</div></a>
+		</li>
+		<li>
+		  <div id="sticker">限購一次</div>
+		  <dl><img src="img/nexon.dfidle_cera_12000.png"></dl>
+		  <dd>遊戲幣 12,000賽拉</dd>
+		  <dt>$570</dt>
+			<a target="_self" href="buy_fail.html"><div class="buy">購買</div></a>
+		</li>
+		<li>  
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 30,000賽拉</dd>
+		  <dt>$1,420</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
+		  <div id="sticker">10%OFF</div>
 		  <dl><img src="img/nexon.dfidle_cera_69000.png"></dl>
+		  <dd>遊戲幣 69,000賽拉</dd>
+		  <dt>$2,980</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
+		  <dl><img src="img/nexon.dfidle_cera_149000.png"></dl>
+		  <dd>遊戲幣 149,000賽拉</dd>
+		  <dt>$4,980</dt>
+		  <div class="buy">購買</div>
+		</li>
+	</div>
+
+   <!--賽拉幣-->
+	<div id="tresure_box" class="tb3">
+	    <li>
+		  <div id="sticker">熱銷</div>
+		  <dl><img src="img/nexon.dfidle_cera_149000.png"></dl>
+		  <dd>遊戲幣 6,000賽拉</dd>
+		  <dt>$290</dt>
+		  <a target="_self" href="buy_success.html"><div class="buy">購買</div></a>
+		</li>
+		<li>
+		  <div id="sticker">限購一次</div>
+		  <dl><img src="img/nexon.dfidle_cera_149000.png"></dl>
+		  <dd>遊戲幣 12,000賽拉</dd>
+		  <dt>$570</dt>
+			<a target="_self" href="buy_fail.html"><div class="buy">購買</div></a>
+		</li>
+		<li>  
+		  <dl><img src="img/nexon.dfidle_cera_149000.png"></dl>
+		  <dd>遊戲幣 30,000賽拉</dd>
+		  <dt>$1,420</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
+		  <div id="sticker">10%OFF</div>
+		  <dl><img src="img/nexon.dfidle_cera_149000.png"></dl>
 		  <dd>遊戲幣 69,000賽拉</dd>
 		  <dt>$2,980</dt>
 		  <div class="buy">購買</div>
@@ -147,15 +243,17 @@
 	</div>
 	
   <div id="footer">
-	    <div class="terms2"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
-		<ul><img src="img/class12.png"></ul>
-		<li>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容<br>
+	    <ul><img src="img/class12.png"></ul>
+	    <li>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容<br>
 本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務<br>
 請注意遊戲時間，避免沉迷</li>
 	    <ol>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容。本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務。請注意遊戲時間，避免沉迷</ol>
+	    <div class="terms2"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
+		
 	    <dd><img src="img/mycard_logo.svg"></dd>
         <dl><img src="img/nexon_w.png"></dl>
 		<div class="terms"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
+	    
 	  
 	</div>
 </div>
