@@ -86,7 +86,7 @@ nav .nav_box .login_box #nav_login_btn {
 	padding:2.5% 4% 1.5% 4%;
 	border-radius:19px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 15px;
 	font-weight: bold;
@@ -102,7 +102,7 @@ nav .nav_box .login_box #nav_logout_btn {
 	padding:2% 4% 2% 4%;
 	border-radius:19px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 15px;
 	font-weight: bold;
@@ -117,7 +117,7 @@ nav .nav_box .login_box .nav_team {
 	margin:2% 0 0 0%;
 	padding:0 0;
 	display:inline;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:13px;
 	line-height: 13px;
 	font-weight: bold;
@@ -141,7 +141,7 @@ nav .nav_box .login_box select {
 	padding:1.5% 2%;
 	border:none;
 	background-color:#333333;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:13px;
 	line-height: 15px;
 	font-weight: normal;
@@ -370,7 +370,7 @@ nav .nav_box .menu_box.active {
 	margin:1% 0% 3.5% 0%;
 	padding:0 0 1% 0;
 	border-bottom:1px solid #ccc;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:32px;
 	line-height: 32px;
 	font-weight: bold;
@@ -391,7 +391,7 @@ nav .nav_box .menu_box.active {
 	padding:1% 2%;
 	background-color:#efefef;
 	border-radius:50px;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:18px;
 	line-height: 18px;
 	font-weight: bold;
@@ -444,7 +444,7 @@ nav .nav_box .menu_box.active {
 	width:10%;
 	margin:2% 45% 2% 45%;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:32px;
 	line-height: 32px;
 	font-weight: bold;
@@ -490,7 +490,7 @@ nav .nav_box .menu_box.active {
 	width:100%;
 	margin:0% 0% 4% 0%;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:32px;
 	line-height: 32px;
 	font-weight: bold;
@@ -521,7 +521,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:1% 0% 2% 0%;
 	padding:1.5% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:22px;
 	line-height: 28px;
 	font-weight: normal;
@@ -533,7 +533,7 @@ nav .nav_box .menu_box.active {
 	width:100%;
 	height:auto;
 	margin:5% 0 3% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:28px;
 	line-height: 28px;
 	font-weight: bold;
@@ -552,7 +552,7 @@ nav .nav_box .menu_box.active {
     width:auto;
 	margin:0 0 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 15px;
 	font-weight: normal;
@@ -577,7 +577,7 @@ nav .nav_box .menu_box.active {
     width:26%;
 	margin:1% 1% 0 0;
 	padding:1.4% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:18px;
 	line-height: 18px;
 	font-weight: normal;
@@ -606,7 +606,7 @@ nav .nav_box .menu_box.active {
 	padding:1.5% 0;
 	border-radius:10px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:18px;
 	line-height: 18px;
 	font-weight: bold;
@@ -621,7 +621,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:2% 10% 4% 10%;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 22px;
 	font-weight: normal;
@@ -650,7 +650,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:1% 27% 2% 27%;
 	padding:1.5% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:22px;
 	line-height: 28px;
 	font-weight: normal;
@@ -662,7 +662,7 @@ nav .nav_box .menu_box.active {
 	width:100%;
 	height:auto;
 	margin:0 0 3% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:28px;
 	line-height: 28px;
 	font-weight: bold;
@@ -681,7 +681,7 @@ nav .nav_box .menu_box.active {
     width:auto;
 	margin:0 0 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 15px;
 	font-weight: normal;
@@ -707,7 +707,7 @@ nav .nav_box .menu_box.active {
     width:20%;
 	margin:0 1% 0 0;
 	padding:1.4% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: normal;
@@ -736,7 +736,7 @@ nav .nav_box .menu_box.active {
 	padding:1.5% 0;
 	border-radius:10px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:18px;
 	line-height: 18px;
 	font-weight: bold;
@@ -750,7 +750,7 @@ nav .nav_box .menu_box.active {
 	width:25%;
 	margin:3% 2% 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: normal;
@@ -763,7 +763,7 @@ nav .nav_box .menu_box.active {
 	width:71%;
 	margin:1% 2% 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -777,7 +777,7 @@ nav .nav_box .menu_box.active {
 	width:10%;
 	margin:2% 1% 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: normal;
@@ -791,7 +791,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:2% 10% 4% 10%;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 22px;
 	font-weight: normal;
@@ -807,7 +807,7 @@ nav .nav_box .menu_box.active {
 	padding:2.5% 0;
 	border-radius:14px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -828,7 +828,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:1% 27% 2% 27%;
 	padding:1.5% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:22px;
 	line-height: 28px;
 	font-weight: normal;
@@ -840,7 +840,7 @@ nav .nav_box .menu_box.active {
 	width:100%;
 	height:auto;
 	margin:5% 0 3% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:24px;
 	line-height: 24px;
 	font-weight: bold;
@@ -859,7 +859,7 @@ nav .nav_box .menu_box.active {
     width:auto;
 	margin:0 0 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 15px;
 	font-weight: normal;
@@ -884,7 +884,7 @@ nav .nav_box .menu_box.active {
     width:26%;
 	margin:0 1% 0 0;
 	padding:1.4% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: normal;
@@ -913,7 +913,7 @@ nav .nav_box .menu_box.active {
 	padding:1.5% 0;
 	border-radius:10px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:18px;
 	line-height: 18px;
 	font-weight: bold;
@@ -927,7 +927,7 @@ nav .nav_box .menu_box.active {
 	width:25%;
 	margin:3% 2% 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: normal;
@@ -940,7 +940,7 @@ nav .nav_box .menu_box.active {
 	width:71%;
 	margin:1% 2% 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -954,7 +954,7 @@ nav .nav_box .menu_box.active {
 	width:10%;
 	margin:2% 1% 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: normal;
@@ -968,7 +968,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:2% 10% 4% 10%;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 22px;
 	font-weight: normal;
@@ -984,7 +984,7 @@ nav .nav_box .menu_box.active {
 	padding:2.5% 0;
 	border-radius:14px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1001,7 +1001,7 @@ nav .nav_box .menu_box.active {
 	width:25%;
 	margin:3% 2% 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: normal;
@@ -1014,7 +1014,7 @@ nav .nav_box .menu_box.active {
 	width:71%;
 	margin:1% 2% 0 0;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1048,7 +1048,7 @@ nav .nav_box .menu_box.active {
 	margin:0 5% 0 0;
 	padding:1% 0;
 	display:inline;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1062,7 +1062,7 @@ nav .nav_box .menu_box.active {
 	margin:0 0 0 0;
 	padding:1% 0;
 	display:inline;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1077,7 +1077,7 @@ nav .nav_box .menu_box.active {
 	padding:4.5% 0;
 	border-radius:14px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1104,7 +1104,7 @@ nav .nav_box .menu_box.active {
     width:23.3%;
 	margin:0 3% 0 3%;
 	padding:1% 2%;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:26px;
 	line-height: 26px;
 	font-weight: bold;
@@ -1139,7 +1139,7 @@ nav .nav_box .menu_box.active {
 	padding:0.3% 0.5%;
 	background-color:#ff9e05;
 	border-radius:15px;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 15px;
 	font-weight: bold;
@@ -1186,7 +1186,7 @@ nav .nav_box .menu_box.active {
 	margin:0 0;
 	padding:3% 10% 0 10%;
 	background-color:#ffffff;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:16px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1200,7 +1200,7 @@ nav .nav_box .menu_box.active {
 	margin:0 10%;
 	padding:3.5% 0;
 	background-color:#ffffff;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:28px;
 	line-height: 28px;
 	font-weight: bold;
@@ -1215,7 +1215,7 @@ nav .nav_box .menu_box.active {
 	padding:4.5% 0;
 	border-radius:10px;
 	background: linear-gradient(to bottom,  rgba(224,80,76,1) 0%,rgba(217,44,44,1) 100%);
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1239,7 +1239,7 @@ nav .nav_box .menu_box.active {
     width:100%;
 	height:auto;
 	margin:0 0 2% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:32px;
 	line-height: 32px;
 	font-weight: bold;
@@ -1251,7 +1251,7 @@ nav .nav_box .menu_box.active {
     width:100%;
 	height:auto;
 	margin:2% 0 1% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:16px;
 	line-height: 16px;
 	font-weight: bold;
@@ -1264,7 +1264,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:0 0%;
 	padding:0% 0%;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:28px;
 	line-height: 32px;
 	font-weight: normal;
@@ -1277,7 +1277,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:2% 5% 0% 5%;
 	padding:0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:16px;
 	line-height: 20px;
 	font-weight: normal;
@@ -1290,7 +1290,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:2% 5% 2% 5%;
 	padding:0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:18px;
 	line-height: 28px;
 	font-weight: normal;
@@ -1305,7 +1305,7 @@ nav .nav_box .menu_box.active {
 	padding:2.5% 0;
 	border-radius:14px;
 	background: linear-gradient(to bottom,  rgba(224,80,76,1) 0%,rgba(217,44,44,1) 100%);
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1329,7 +1329,7 @@ nav .nav_box .menu_box.active {
     width:100%;
 	height:auto;
 	margin:0 0 2% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:32px;
 	line-height: 32px;
 	font-weight: bold;
@@ -1341,7 +1341,7 @@ nav .nav_box .menu_box.active {
     width:100%;
 	height:auto;
 	margin:2% 0 1% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:16px;
 	line-height: 16px;
 	font-weight: bold;
@@ -1354,7 +1354,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:0 0%;
 	padding:0% 0%;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:28px;
 	line-height: 32px;
 	font-weight: normal;
@@ -1367,7 +1367,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:2% 5% 0% 5%;
 	padding:0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:16px;
 	line-height: 20px;
 	font-weight: normal;
@@ -1380,7 +1380,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:2% 5% 2% 5%;
 	padding:0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:18px;
 	line-height: 28px;
 	font-weight: normal;
@@ -1395,7 +1395,7 @@ nav .nav_box .menu_box.active {
 	padding:2.5% 0;
 	border-radius:14px;
 	background: linear-gradient(to bottom,  rgba(224,80,76,1) 0%,rgba(217,44,44,1) 100%);
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1428,7 +1428,7 @@ nav .nav_box .menu_box.active {
 	margin:0 0 0 0;
 	padding:1% 0;
 	display:inline;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 15px;
 	font-weight: normal;
@@ -1449,7 +1449,7 @@ nav .nav_box .menu_box.active {
 	margin:1% 1% 0 0;
 	padding:1% 0;
 	display:inline;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:18px;
 	line-height: 18px;
 	font-weight: normal;
@@ -1469,7 +1469,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:2% 10% 4% 10%;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 22px;
 	font-weight: normal;
@@ -1485,7 +1485,7 @@ nav .nav_box .menu_box.active {
 	padding:2.5% 0;
 	border-radius:14px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1506,7 +1506,7 @@ nav .nav_box .menu_box.active {
 	width:50%;
 	margin:2% 0% 0% 0%;
 	padding:3% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1519,7 +1519,7 @@ nav .nav_box .menu_box.active {
 	width:50%;
 	margin:2% 0% 0% 0% ;
 	padding:3% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1562,7 +1562,7 @@ nav .nav_box .menu_box.active {
 	width:25%;
 	margin:1% 2% 0 0;
 	padding:2.5% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:18px;
 	line-height: 18px;
 	font-weight: normal;
@@ -1589,7 +1589,7 @@ nav .nav_box .menu_box.active {
     background-repeat: no-repeat;
 	background-position: top left;
 	background-color:#ffffff;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:16px;
 	line-height: 16px;
 	font-weight: normal;
@@ -1600,7 +1600,7 @@ nav .nav_box .menu_box.active {
 }
 #wrapper .record .date .calendar_box span {
 	margin:0 1%;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	color: #666666;
 	font-size:18px;
 	line-height: 30px;
@@ -1614,7 +1614,7 @@ nav .nav_box .menu_box.active {
 	padding:2.5% 0;
 	border-radius:14px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1630,7 +1630,7 @@ nav .nav_box .menu_box.active {
 	padding:2.5% 0;
 	border-radius:14px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", "PingFang"; 
 	font-size:20px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1661,7 +1661,7 @@ nav .nav_box .menu_box.active {
 	border:1px solid #666666;
 	border-radius:5px;
 	background-color:#ffffff;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:16px;
 	line-height: 16px;
 	font-weight: normal;
@@ -1692,7 +1692,7 @@ nav .nav_box .menu_box.active {
 	width:100%;
 	margin:4% 0% 2% 0%;
 	padding:0 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:32px;
 	line-height: 32px;
 	font-weight: bold;
@@ -1729,7 +1729,7 @@ nav .nav_box .menu_box.active {
 	width:38%;
 	margin:0 0;
 	padding:1% 24% 1% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:12px;
 	line-height: 13px;
 	font-weight: normal;
@@ -1746,7 +1746,7 @@ nav .nav_box .menu_box.active {
 	height:auto;
 	margin:0 0 0 0;
 	padding:1% 0;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:15px;
 	line-height: 15px;
 	font-weight: normal;
@@ -1792,7 +1792,7 @@ table {
 	border-top:1px solid #666666;
 	border-bottom:1px solid #666666;
 	border-left:1px solid #666666;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:12px;
 	line-height: 12px;
 	font-weight: normal;
@@ -1835,7 +1835,7 @@ input {
 	border:1px solid #666666;
 	border-radius:5px;
 	background-color:#ffffff;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:16px;
 	line-height: 16px;
 	font-weight: normal;
@@ -1852,7 +1852,7 @@ select {
 	border:1px solid #666666;
 	border-radius:5px;
 	background-color:#ffffff;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體", "PingFang"; 
 	font-size:16px;
 	line-height: 16px;
 	font-weight: normal;
