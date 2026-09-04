@@ -106,7 +106,7 @@ nav .nav_box .menu_box {
   text-align: center;
   vertical-align: middle;
   position: relative;
-  padding: 15px 10% 15px 0;
+  padding: 15px 0 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,13 +118,21 @@ nav .nav_box .menu_box {
 
 @media (max-width: 768px) {
   nav .nav_box .menu_box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  list-style: none;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+	  margin:-9% 0 0 5%;
+  padding: 15px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*下拉選單*/
   }
 }
 
@@ -136,7 +144,7 @@ nav .nav_box .menu_box li {
 
 @media (max-width: 768px) {
   nav .nav_box .menu_box li {
-    width: 100%;
+    width: auto;
     max-width: 100%;
   }
 }
@@ -314,7 +322,7 @@ nav .nav_box .login_box select {
 	margin:0 0;
 	padding:1.5% 0%;
 	border:none;
-	background-color:#000000;
+	background-color:#333333;
 	font-family: "微軟正黑體";
 	font-size:12px;
 	line-height: 12px;
@@ -421,7 +429,7 @@ nav .nav_box .login_box select {
 	height: 100vh;
 	margin:0 0 0 0;
 	padding:4% 0;
-	background-color:#eeeeee;
+	background: linear-gradient(to bottom,  rgba(238,238,238,0.85) 0%,rgba(238,238,238,0.85) 100%);
 	float:left;
 }
 
@@ -490,7 +498,7 @@ nav .nav_box .login_box select {
 	float:left;
 }
 #wrapper .login ul li {
-    width:100%;
+    width:auto;
 	margin:0 0 0 0;
 	padding:0 0;
 	font-family: "微軟正黑體";
@@ -498,10 +506,10 @@ nav .nav_box .login_box select {
 	line-height: 15px;
 	font-weight: normal;
 	color: #666666;
-	text-align:left;
+	text-align:right;
 	display:inline;
 	cursor:pointer;
-	float:left;
+	float:right;
 }
 #wrapper .login ul li:hover{color: #333333;}
 #wrapper .login ul ol {
@@ -511,7 +519,7 @@ nav .nav_box .login_box select {
 	display:inline;
 	text-align:center;
 	cursor:pointer;
-	float:left;
+	float:right;
 }
 #wrapper .login ul ol img {width:100%;}
 #wrapper .login ul dl {
@@ -1190,7 +1198,7 @@ nav .nav_box .login_box select {
 	float:left;
 }
 #wrapper .record .date .title_box {
-	width:26%;
+	width:24.5%;
 	margin:1% 2% 0 0;
 	padding:2.5% 0;
 	font-family: "微軟正黑體";
@@ -1285,11 +1293,11 @@ nav .nav_box .login_box select {
             margin: 0;
         }
 .input {
-	width:65%;
+	width:67%;
 	height:auto;
 	margin:0;
 	padding:1% 2%;
-	border:1px solid #cccccc;
+	border:1px solid #666666;
 	border-radius:5px;
 	background-color:#ffffff;
 	font-family: "微軟正黑體";
@@ -1297,7 +1305,7 @@ nav .nav_box .login_box select {
 	line-height: 16px;
 	font-weight: normal;
 	color: #666666;
-	text-align:center;
+	text-align:left;
 	float:left;
 }
 
@@ -1335,27 +1343,34 @@ nav .nav_box .login_box select {
 #wrapper #search_result_title img {width:100%;}
 
 
+
 #footer {
-	width:96%;
+	width:100%;
 	margin:5% 0 0 0;
-	padding:0.5% 2% 2% 2%;
+	padding:0% 0% 4% 0%;
 	background-color:#333333;
+	float:left;
+}
+#footer #rank {
+	width:100%;
+	margin:0 0 0 0;
+	padding:0 0;
+	background-color:#444444;
 	float:left;
 }
 #footer ul {
-	width:5%;
-	margin:2% 1% 0 2%;
-	padding:0 0;
-	background-color:#333333;
+	width:4%;
+	margin:2% 1% 0 22%;
+	padding:0 0 1.5% 0;
 	float:left;
 }
 #footer ul img {width:100%;}
-#footer ol {
+#footer li {
 	display:none;
 }
-#footer li {
-	width:48%;
-	margin:2% 0% 0 0;
+#footer ol {
+	width:50%;
+	margin:2% 23% 0 0;
 	padding:0 0;
 	font-family: "微軟正黑體";
 	font-size:11px;
@@ -1364,7 +1379,7 @@ nav .nav_box .login_box select {
 	color: #ffffff;
 	text-align:left;
 	display:inline;
-	float:left;
+	float:right;
 }
 #footer .terms {
 	display:none;
@@ -1387,16 +1402,16 @@ nav .nav_box .login_box select {
 #footer .terms2 a:hover {color: #ffffff; text-decoration:none;} 
 #footer .terms2 a:visited {color: #efefef; text-decoration:none;} 
 #footer dl {
-	width:12%;
-	margin:2% 2% 0 0%;
+	width:25%;
+	margin:2% 2% 0 22%;
 	padding:1% 0 0 0;
 	display:inline;
-	float:right;
+	float:left;
 }
 #footer dl img {width:100%;}
 #footer dd {
-	width:12%;
-	margin:2% 2% 0 2% ;
+	width:25%;
+	margin:2% 22% 0 2% ;
 	padding:1% 0 0 0;
 	display:inline;
 	float:right;
@@ -1429,7 +1444,7 @@ table {
 	float:left;
 }
 th {
-    width:10%;
+        width: 100vw;
 	padding:2px 5px;
 	border-right:1px solid #666666;
 	border-bottom:1px solid #666666;
@@ -1438,7 +1453,7 @@ th {
 }
 tr {
     width:auto;
-	line-height:50px;
+	line-height:25px;
 	border-right:1px solid #666666;
 	border-bottom:1px solid #666666;
 	padding:2px 5px;
@@ -1473,7 +1488,7 @@ input {
 	float:left;
 }
 select {
-	width:99.5%;
+	width:93.5%;
 	height:auto;
 	margin:0 0;
 	padding:1.7% 2%;

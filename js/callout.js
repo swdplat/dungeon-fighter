@@ -2,6 +2,7 @@
 $(document).ready(function() {
 	
 	$("#login_callout").hide()
+	$("#login_callout2").hide()
 	$("#callout").hide()
 	$(".nav_name").hide()
 	$(".nav_team").hide()
@@ -36,8 +37,24 @@ $(document).ready(function() {
 		$("#login_callout").hide()
 	});	
 	
+	$("#nav_login_btn").click(function(){
+	  $("#nav_login_btn").hide()
+	  $("#login_callout2").show()
+	});	
+	
+	$("#login_callout_close").click(function(){
+        $("#nav_login_btn").show()
+		$("#login_callout2").hide()
+	});	
+	
+	$("#login_callout_close").click(function(){
+        $("#nav_login_btn").show()
+		$("#login_callout").hide()
+	});	
+	
 	$("#id_submit").click(function(){
 	  $("#login_callout").hide()
+	  $("#login_callout2").hide()
 	  $("#nav_login_btn").hide()
 	  $(".nav_team").show()
 	  $(".nav_name").show()

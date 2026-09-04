@@ -147,7 +147,7 @@
 
 .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
   white-space: nowrap;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   min-width: 32px;
   width: 32px;
@@ -253,7 +253,7 @@
 }
 
 .daterangepicker .calendar-time {
-  text-align: center;
+  text-align: left!important;
   margin: 4px auto 0 auto;
   line-height: 30px;
   position: relative;
