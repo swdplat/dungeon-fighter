@@ -87,8 +87,8 @@ nav .nav_box .login_box #nav_login_btn {
 	border-radius:19px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
     font-family: "微軟正黑體", "PingFang"; 
-	font-size:15px;
-	line-height: 15px;
+	font-size:14px;
+	line-height: 14px;
 	font-weight: bold;
 	color: #ffffff;
 	text-align:center;
@@ -103,8 +103,8 @@ nav .nav_box .login_box #nav_logout_btn {
 	border-radius:19px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
     font-family: "微軟正黑體", "PingFang"; 
-	font-size:15px;
-	line-height: 15px;
+	font-size:14px;
+	line-height: 14px;
 	font-weight: bold;
 	color: #ffffff;
 	text-align:center;
@@ -114,12 +114,12 @@ nav .nav_box .login_box #nav_logout_btn {
 }
 nav .nav_box .login_box .nav_team {
 	width:auto;
-	margin:2% 0 0 0%;
+	margin:2.2% 0 0 0%;
 	padding:0 0;
 	display:inline;
 	font-family: "微軟正黑體", "PingFang"; 
-	font-size:13px;
-	line-height: 13px;
+	font-size:14px;
+	line-height: 14px;
 	font-weight: bold;
 	color: #ffffff;
 	text-align:right;
@@ -128,7 +128,7 @@ nav .nav_box .login_box .nav_team {
 }
 nav .nav_box .login_box .nav_name {
 	width:auto;
-	margin:0.5% 0 0 0;
+	margin:1% 0 0 0;
 	padding:0 0;
 	display:inline;
 	text-align:right;
@@ -139,16 +139,20 @@ nav .nav_box .login_box select {
 	height:auto;
 	margin:0 0;
 	padding:1.5% 2%;
-	border:none;
-	background-color:#333333;
+	border:none!important;
+	background-color:#333333!important;
+	background-image:none;
 	font-family: "微軟正黑體", "PingFang"; 
-	font-size:13px;
+	font-size:14px;
 	line-height: 15px;
 	font-weight: normal;
 	color: #ffffff;
 	text-align:left;
 	display:inline;
 	float:left;
+	appearance: none;          /* 清除瀏覽器預設樣式 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 @media (max-width: 768px) {
   nav .nav_box .burger_menu {
@@ -185,7 +189,7 @@ nav .nav_box .menu_box {
   text-align: center;
   vertical-align: middle;
   position: relative;
-  padding: 15px 0 15px 15%;
+  padding: 17px 0 13px 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,6 +212,7 @@ nav .nav_box .menu_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "微軟正黑體", "PingFang";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1467,11 +1472,11 @@ nav .nav_box .menu_box.active {
 #wrapper .record .error {
 	width:80%;
 	height:auto;
-	margin:2% 10% 4% 10%;
+	margin:4% 10% 4% 10%;
 	padding:0 0;
 	font-family: "微軟正黑體", "PingFang"; 
-	font-size:15px;
-	line-height: 22px;
+	font-size:12px;
+	line-height: 18px;
 	font-weight: normal;
 	color: #ff0004;
 	text-align:center;
@@ -1859,6 +1864,9 @@ select {
 	color: #333333;
 	text-align:left;
 	float:left;
+ 	appearance: none;          /* 清除瀏覽器預設樣式 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 #PC {display:inline;}
