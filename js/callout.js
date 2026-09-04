@@ -6,6 +6,7 @@ $(document).ready(function() {
 	$("#callout").hide()
 	$(".nav_name").hide()
 	$(".nav_team").hide()
+	$("#nav_logout_btn").hide()
 	
     $("#how").click(function(){
 	  $("#callout").show()
@@ -56,8 +57,18 @@ $(document).ready(function() {
 	  $("#login_callout").hide()
 	  $("#login_callout2").hide()
 	  $("#nav_login_btn").hide()
+	  $("#nav_logout_btn").show()
 	  $(".nav_team").show()
 	  $(".nav_name").show()
-	});	
+	});
+	
+	$("#nav_logout_btn").click(function(){
+	  $("#login_callout").hide()
+	  $("#login_callout2").hide()
+	  $("#nav_login_btn").show()
+	  $("#nav_logout_btn").hide()
+	  $(".nav_team").hide()
+	  $(".nav_name").hide()
+	});
 
 });

@@ -12,7 +12,7 @@ $(document).ready(function() {
 	$("#character").hide()
 	$(".btn_confirm").hide()
 	$("#btn_search1").hide()
-	$("#btn_search2").hide()
+
 	$("#btn_research1").hide()
 	$("#search_team").hide()
 	$("#search_team2").hide()

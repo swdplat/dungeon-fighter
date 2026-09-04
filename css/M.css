@@ -62,7 +62,7 @@ nav .nav_box .burger_menu {
   font-size: 0px;
   text-align: right;
   margin-top: 17px;
-  display: none;
+  display: none!important;
 }
 
 @media (max-width: 768px) {
@@ -110,9 +110,9 @@ nav .nav_box .menu_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   /*下拉選單*/
 }
 
@@ -121,17 +121,17 @@ nav .nav_box .menu_box {
   width: 100%;
   max-width: 100%;
   list-style: none;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   position: relative;
-	  margin:-9% 0 0 5%;
+	  margin:-9% 0 0 15%;
   padding: 15px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   /*下拉選單*/
   }
 }
@@ -295,6 +295,24 @@ nav .nav_box .login_box #nav_login_btn {
 	display:inline;
 	float:right;
 }
+nav .nav_box .login_box #nav_logout_btn {
+	width:auto;
+	height:20px;
+	margin: 0 0 0 4%;
+	padding:3px 5% 1px 5%;
+	border-radius:19px;
+	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
+    font-family: "微軟正黑體";
+	font-size:13px;
+	line-height: 13px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align:center;
+	cursor:pointer;
+	display:inline;
+	white-space: nowrap;
+	float:right;
+}
 nav .nav_box .login_box .nav_team {
 	width:auto;
 	margin:1.8% 0 0 0%;
@@ -306,6 +324,7 @@ nav .nav_box .login_box .nav_team {
 	font-weight: bold;
 	color: #ffffff;
 	text-align:right;
+	white-space: nowrap;
 	float:right;	
 }
 nav .nav_box .login_box .nav_name {
