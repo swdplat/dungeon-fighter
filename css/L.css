@@ -18,6 +18,7 @@ nav {
   top: 0px;
   left: 0px;
   width: 100%;
+  height:55px;
   max-width: 100%;
   background-color: #333333;
   z-index: 20;
@@ -45,9 +46,9 @@ nav .nav_box {
 nav .nav_box .logo {
   width: 100%;
   max-width: 90px;
-  display: inline-block;
+  display: inline;
   vertical-align: middle;
-  padding: 2px 0 2px 20px;
+  padding: 4px 0 2px 20px;
 }
 
 nav .nav_box .logo img {
@@ -112,39 +113,43 @@ nav .nav_box .login_box {
 }
 nav .nav_box .login_box #nav_login_btn {
 	width:50px;
-	margin: 0 0;
-	padding:2.5% 4% 1.5% 4%;
+	margin: 0 0;1
+        height:20px;
+	padding:5px 4% 5px 4%;
 	border-radius:19px;
-	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體", "PingFang";
+   	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
+        font-family: "微軟正黑體", "PingFang";
 	font-size:14px;
 	line-height: 14px;
 	font-weight: bold;
 	color: #ffffff;
 	text-align:center;
+        white-space: nowrap;
 	cursor:pointer;
 	display:inline;
 	float:right;
 }
 nav .nav_box .login_box #nav_logout_btn {
 	width:50px;
-	margin: -0.5% 0 0 4%;
-	padding:2% 4% 2% 4%;
+        height:25px;
+	padding:5px 4% 5px 4%;
+        margin:0 0 0 2%;
 	border-radius:19px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體", "PingFang";
+        font-family: "微軟正黑體", "PingFang";
 	font-size:14px;
 	line-height: 14px;
 	font-weight: bold;
 	color: #ffffff;
 	text-align:center;
+        white-space: nowrap;
 	cursor:pointer;
 	display:inline;
 	float:right;
 }
 nav .nav_box .login_box .nav_team {
-	width:120px;
-	margin:2% 0 0 0%;
+	width:auto;
+	margin:2% 3% 0 0%;
 	padding:0 0;
 	display:inline;
 	font-family: "微軟正黑體", "PingFang";
@@ -153,15 +158,16 @@ nav .nav_box .login_box .nav_team {
 	font-weight: bold;
 	color: #ffffff;
 	text-align:right;
+        white-space: nowrap;
 	float:right;	
 }
 nav .nav_box .login_box .nav_name {
 	width:auto;
-	margin:0.7% 0 0 0;
+	margin:0.3% 0 0 0;
 	padding:0 0;
 	font-family: "微軟正黑體", "PingFang";
 	display:inline;
-	text-align:right;
+	text-align:left;
 	float:right;	
 }
 nav .nav_box .login_box select {
@@ -184,6 +190,8 @@ nav .nav_box .login_box select {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
+
 
 nav .nav_box .menu_box {
   width: 100%;
@@ -348,6 +356,101 @@ nav .nav_box .menu_box.active {
 }
 
 
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400);
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+    }
+
+.dropdownbox {
+  margin: 0 5% 0 0;
+  width: auto;
+  margin-top: 0;
+  background-color:#333333;
+  color: #ffffff;
+  cursor: pointer;
+  float:left;
+  display:block;
+}
+
+.dropdownbox > p {
+  padding: 5px 0;
+  white-space: nowrap;
+  font-family: "微軟正黑體", "PingFang";
+  font-size: 12px;
+  line-height: 12px;
+  text-align:left!important;
+  user-select: none;
+  -moz-user-select:none;
+  /* Safari */
+  -khtml-user-select: none;
+  displlay:flex;
+  float:left;
+}
+
+ul.menu {
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  overflow: hidden;
+  height: 0;
+  margin-top: 10px;
+  -webkit-transition: all 0.3s ease-in; 
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  /*-moz-transform:scale(0); */
+  background-color:#333333;
+  color: #ffffff;
+  text-align:left!important;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select:none;
+  /* Safari */
+  -khtml-user-select: none;
+  float:right;
+}
+
+ul.menu li {
+  width:100%;
+  font-family: "微軟正黑體", "PingFang";
+  white-space: nowrap;
+  margin:0 0;
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align:left;
+  -webkit-transition: all 0.3s ease-in; 
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-bottom:none;
+  display:inline-block;
+  float:right;
+}
+ul.menu li:hover {
+  padding: o;
+  color: #ffffff;
+  background-color:#555555;
+  cursor:pointer;
+}
+
+.menu.showMenu {
+  /*-moz-transform:scale(1);*/
+  width:auto;
+  height:auto;
+  margin:0 0;
+  padding:5px 0;
+  float:left;
+}
+
+
+
 /*如何查詢彈窗*/
 #callout {
     position:fixed;
@@ -355,7 +458,7 @@ nav .nav_box .menu_box.active {
 	top:0;
 	left:0;
 	width:35%;
-	height:460px;
+	height:480px;
 	margin:5% 30% 0 30%;
 	padding:2% 2%;
 	border:1px solid #cccccc;
@@ -388,7 +491,7 @@ nav .nav_box .menu_box.active {
 }
 #callout ul {
 	width:96%;
-	height:410px;
+	height:360px;
 	padding:0 2%;
 	overflow-y: scroll;
 	float:left;
@@ -1547,19 +1650,21 @@ nav .nav_box .menu_box.active {
 	margin:0 0 0 0;
 	padding:0 0;
 	background-color:#444444;
+        display:inline;
 	float:left;
 }
-#footer ul {
+#footer .age {
 	width:2.5%;
-	margin:0 0 0 0;
-	padding:1% 1% 0.8% 37.5%;
+	margin:0 1% 0 38%;
+	padding:1% 0;
+        display:inline;
 	float:left;
 }
-#footer ul img {width:100%;}
-#footer li {
-	width:22%;
+#footer .age img {width:100%;}
+#footer .rule {
+	width:auto;
 	margin:0 0;
-	padding:1% 37% 1% 0;
+	padding:1% 2% 1% 0;
 	font-family: "微軟正黑體", "PingFang";
 	font-size:12px;
 	line-height: 16px;
@@ -1569,7 +1674,7 @@ nav .nav_box .menu_box.active {
 	display:inline;
 	float:left;
 }
-#footer ol {
+#footer .rule2 {
 	display:none;
 }
 #footer .terms {
@@ -1699,3 +1804,69 @@ select {
 #PC {display:inline;}
 #MOBILE {display:none;}
 #TABLE {display:none;}
+
+.copy-sn {
+    padding: 4px 10px;
+    border-radius: 5px;
+	border:none;
+    background-color: #eb510e;
+	font-family: "微軟正黑體";
+	font-size:11px;
+	line-height: 11px;
+    color: #FFF;
+    cursor: pointer;
+}
+ul,
+ul li,
+li {
+    list-style: none;
+}
+.list_demand {
+    display: flex;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0px solid #e5e5e5;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 80%;
+	text-decoration: none;
+}
+
+.list_demand li {
+    position: relative;
+	list-style: none;
+}
+
+.list_demand .link_demand {
+    font-size: .85rem;
+    line-height: 160%;
+    color: #7a7a7a;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+	font-family: "微軟正黑體";
+	font-size:15px;
+	line-height: 15px;
+	color: #333333;
+	text-decoration: none;
+}
+
+
+.list_demand li + li {
+    margin-left: 10px;
+}
+
+.list_demand li + li::before {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    width: 1px;
+    height: 13px;
+    background-color: #7a7a7a;
+    content: '';
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

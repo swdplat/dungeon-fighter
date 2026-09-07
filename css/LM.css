@@ -18,6 +18,7 @@ nav {
   top: 0px;
   left: 0px;
   width: 100%;
+  height:52px;
   max-width: 100%;
   background-color: #333333;
   z-index: 20;
@@ -82,32 +83,36 @@ nav .nav_box .login_box {
 }
 nav .nav_box .login_box #nav_login_btn {
 	width:50px;
-	margin: 0 0;
-	padding:2.5% 4% 1.5% 4%;
+	margin: 0 0;1
+        height:20px;
+	padding:5px 4% 5px 4%;
 	border-radius:19px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體", "PingFang"; 
+        font-family: "微軟正黑體", "PingFang";
 	font-size:14px;
 	line-height: 14px;
 	font-weight: bold;
 	color: #ffffff;
 	text-align:center;
+        white-space: nowrap;
 	cursor:pointer;
 	display:inline;
 	float:right;
 }
 nav .nav_box .login_box #nav_logout_btn {
-	width:80px;
-	margin: 0.5% 0 0 4%;
-	padding:2% 4% 2% 4%;
+	width:50px;
+        height:24px;
+	padding:5px 4% 5px 4%;
+        margin:0 0 0 2%;
 	border-radius:19px;
 	background: linear-gradient(to bottom,  rgba(232,11,5,1) 0%,rgba(186,5,5,1) 100%); 
-    font-family: "微軟正黑體", "PingFang"; 
+        font-family: "微軟正黑體", "PingFang";
 	font-size:14px;
 	line-height: 14px;
 	font-weight: bold;
 	color: #ffffff;
 	text-align:center;
+        white-space: nowrap;
 	cursor:pointer;
 	display:inline;
 	float:right;
@@ -128,7 +133,7 @@ nav .nav_box .login_box .nav_team {
 }
 nav .nav_box .login_box .nav_name {
 	width:auto;
-	margin:1% 0 0 0;
+	margin:0.5% 0 0 0;
 	padding:0 0;
 	display:inline;
 	text-align:right;
@@ -345,6 +350,97 @@ nav .nav_box .menu_box.active {
 }
 
 
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400);
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+    }
+
+.dropdownbox {
+  margin: 0 5% 0 0;
+  width: auto;
+  margin-top: 0;
+  background-color:#333333;
+  color: #ffffff;
+  cursor: pointer;
+  float:left;
+  display:block;
+}
+
+.dropdownbox > p {
+  padding: 5px 0;
+  white-space: nowrap;
+  font-family: "微軟正黑體", "PingFang";
+  font-size: 12px;
+  line-height: 12px;
+  text-align:left!important;
+  user-select: none;
+  -moz-user-select:none;
+  /* Safari */
+  -khtml-user-select: none;
+  displlay:flex;
+  float:left;
+}
+
+ul.menu {
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  overflow: hidden;
+  height: 0;
+  margin-top: 10px;
+  -webkit-transition: all 0.3s ease-in; 
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  /*-moz-transform:scale(0); */
+  background-color:#333333;
+  color: #ffffff;
+  text-align:left!important;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select:none;
+  /* Safari */
+  -khtml-user-select: none;
+  float:right;
+}
+
+ul.menu li {
+  width:100%;
+  font-family: "微軟正黑體", "PingFang";
+  white-space: nowrap;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align:left;
+  -webkit-transition: all 0.3s ease-in; 
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-bottom:none;
+  display:inline-block;
+  float:right;
+}
+ul.menu li:hover {
+  padding: o;
+  color: #ffffff;
+  background-color:#555555;
+  cursor:pointer;
+}
+
+.menu.showMenu {
+  /*-moz-transform:scale(1);*/
+  height:auto;
+  padding:5px 0;
+}
+
+
+
 /*如何查詢彈窗*/
 #callout {
     position:fixed;
@@ -352,7 +448,7 @@ nav .nav_box .menu_box.active {
 	top:0;
 	left:0;
 	width:35%;
-	height:400px;
+	height:390px;
 	margin:5% 30% 0 30%;
 	padding:2% 2%;
 	border:1px solid #cccccc;
@@ -385,7 +481,7 @@ nav .nav_box .menu_box.active {
 }
 #callout ul {
 	width:96%;
-	height:350px;
+	height:280px;
 	padding:0 2%;
 	overflow-y: scroll;
 	float:left;
@@ -1129,11 +1225,11 @@ nav .nav_box .menu_box.active {
 
 
 #wrapper #tresure_box {
-	width:75.4%;
+	width:79.8%;
 	height:auto;
     border-radius:10px;
-	margin:-2% 10% 0% 10%;
-	padding:3% 2% 2% 2%;
+	margin:-2% 9% 0% 11%;
+	padding:3% 0% 2% 0%;
 	float:left;
 }
 #wrapper #tresure_box li #sticker {
@@ -1659,9 +1755,9 @@ nav .nav_box .menu_box.active {
             margin: 0;
         }
 .input {
-	width:67%;
+	width:65%;
 	height:auto;
-	margin:0;
+	margin:0 5% 0 0;
 	padding:1% 2%;
 	border:1px solid #666666;
 	border-radius:5px;
@@ -1721,29 +1817,31 @@ nav .nav_box .menu_box.active {
 	margin:0 0 0 0;
 	padding:0 0;
 	background-color:#444444;
+        display:inline;
 	float:left;
 }
-#footer ul {
-	width:3%;
-	margin:0 0 0 0;
-	padding:0.8% 1% 0.8% 34%;
+#footer .age {
+	width:3.5%;
+	margin:0 1% 0 34%;
+	padding:1% 0;
+        display:inline;
 	float:left;
 }
-#footer ul img {width:100%;}
-#footer li {
-	width:38%;
+#footer .age img {width:100%;}
+#footer .rule {
+	width:auto;
 	margin:0 0;
-	padding:1% 24% 1% 0;
-	font-family: "微軟正黑體", "PingFang"; 
+	padding:1% 2% 1% 0;
+	font-family: "微軟正黑體", "PingFang";
 	font-size:12px;
-	line-height: 13px;
+	line-height: 16px;
 	font-weight: normal;
 	color: #ffffff;
 	text-align:left;
 	display:inline;
-	float:right;
+	float:left;
 }
-#footer ol {
+#footer .rule2 {
 	display:none;
 }
 #footer .terms {
@@ -1872,3 +1970,64 @@ select {
 #PC {display:inline;}
 #MOBILE {display:none;}
 #TABLE {display:none;}
+
+.copy-sn {
+    padding: 4px 10px;
+    border-radius: 5px;
+	border:none;
+    background-color: #eb510e;
+	font-family: "微軟正黑體";
+	font-size:11px;
+	line-height: 11px;
+    color: #FFF;
+    cursor: pointer;
+}
+.list_demand {
+    display: flex;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0px solid #e5e5e5;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 80%;
+	text-decoration: none;
+}
+
+.list_demand li {
+    position: relative;
+	list-style: none;
+}
+
+.list_demand .link_demand {
+    font-size: .85rem;
+    line-height: 160%;
+    color: #7a7a7a;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+	font-family: "微軟正黑體";
+	font-size:15px;
+	line-height: 15px;
+	color: #333333;
+	text-decoration: none;
+}
+
+
+.list_demand li + li {
+    margin-left: 10px;
+}
+
+.list_demand li + li::before {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    width: 1px;
+    height: 13px;
+    background-color: #7a7a7a;
+    content: '';
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

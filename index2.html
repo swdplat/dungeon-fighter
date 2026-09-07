@@ -29,6 +29,7 @@
 <script src="js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="js/tab.js"></script>
 <script type="text/javascript" src="js/callout.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
 	
@@ -74,15 +75,19 @@
 			  <div id="nav_login_btn">登入</div>
 			  <div class="nav_team">冒險團名稱：</div>
 			  <div class="nav_name">
-		          <select>
-					<option value="all">請選擇</option> 
-		            <option value="chara1">TEST_NAME&ensp;LV.55</option>
-		            <option value="chara2">龍神奧爾斯帝德&ensp;</option>
-		            <option value="chara3">北神三世</span>&ensp;</option>
-		            <option value="chara3">金州四爺湯普森</span>&ensp;</option>
-		            <option value="chara3">五筒</span>&ensp;</option>
-		          </select>
+		            <div class="dropdownbox">
+                              <p>請選擇冒險團 ⇅</p>
+                            </div> 
+                            <ul class="menu">
+                                <li>TEST_NAME&ensp;LV.75</li>
+                                <li>龍神奧爾斯帝德&ensp;LV.60</li>
+                                <li>北神三世&ensp;LV.55</li>
+                                <li>金州四爺湯普森&ensp;LV.36</li>
+                                <li>五精英戰士&ensp;LV.25</li> 
+                            </ul>
+
 		      </div>
+              <div id="nav_logout_btn">登出</div>
             </ul>
         </div>
     </nav>
@@ -104,10 +109,10 @@
 <!-- 主視覺 -->
 <div id="wrapper">
   <div class="main_visual"><img id="PC"src="img/main_visual.webp"><img id="TABLE"src="img/main_visual.webp"><img id="MOBILE" src="img/main_visual_m.webp"></div>
-  <div id="login_callout2">
+  <div id="login_callout">
 	<div id="login_callout_close"><img src="img/btn_close.svg"></div>
 	<h6>登入</h6>
-    <div class="login2">
+    <div class="login">
 		<h2>正在使用的是港澳商店</h2>
 		<ul id="member_ID">
 		  <dl>會員代碼</dl>
@@ -132,6 +137,70 @@
     <!--禮包-->
 	<div id="tresure_box" class="tb1">
 	    <li>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 6,000賽拉</dd>
+		  <dt>HKD290</dt>
+		  <a target="_self" href="buy_success.html"><div class="buy">購買</div></a>
+		</li>
+		<li>
+		  <div id="sticker">熱銷</div>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 12,000賽拉</dd>
+		  <dt>HKD570</dt>
+			<a target="_self" href="buy_fail.html"><div class="buy">購買</div></a>
+		</li>
+		<li>  
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 30,000賽拉</dd>
+		  <dt>HKD1,420</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
+		  <div id="sticker">10%OFF</div>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 69,000賽拉</dd>
+		  <dt>HKD2,980</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 149,000賽拉</dd>
+		  <dt>HKD4,980</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 6,000賽拉</dd>
+		  <dt>HKD290</dt>
+		  <a target="_self" href="buy_success.html"><div class="buy">購買</div></a>
+		</li>
+		<li>
+		  <div id="sticker">熱銷</div>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 12,000賽拉</dd>
+		  <dt>HKD570</dt>
+			<a target="_self" href="buy_fail.html"><div class="buy">購買</div></a>
+		</li>
+		<li>  
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 30,000賽拉</dd>
+		  <dt>HKD1,420</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
+		  <div id="sticker">10%OFF</div>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 69,000賽拉</dd>
+		  <dt>HKD2,980</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
+		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
+		  <dd>遊戲幣 149,000賽拉</dd>
+		  <dt>HKD4,980</dt>
+		  <div class="buy">購買</div>
+		</li>
+		<li>
 		  <dl><img src="img/nexon.dfidle_cera_30000.png"></dl>
 		  <dd>遊戲幣 6,000賽拉</dd>
 		  <dt>HKD290</dt>
@@ -239,18 +308,20 @@
 		</li>
 	</div>
 	
-     <div id="footer">
-	   <div id="rank">
-	    <ul><img src="img/class12.png"></ul>
-	    <li>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容<br>
+        <div id="footer">
+	  <div id="rank">
+	    <div class="age"><img src="img/class12.png"></div>
+	    <div class="rule">本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容<br>
 本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務<br>
-請注意遊戲時間，避免沉迷</li>
-	    <ol>本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容。本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務。請注意遊戲時間，避免沉迷</ol>
-	   </div>
-	    <div class="terms2"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>		
+請注意遊戲時間，避免沉迷</div>
+	    <div class="rule2">本遊戲為輔導級 (12+) ，其遊戲情節涉及暴力、不當言語、戀愛交友內容。本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣，物品等付費服務。請注意遊戲時間，避免沉迷</div>
+	  </div>
+	    <div class="terms2"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
+		
 	    <dd><img src="img/mycard_logo.svg"></dd>
-        <dl><img src="img/nexon_w.png"></dl>
-		<div class="terms"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
+            <dl><img src="img/nexon_w.png"></dl>
+	    <div class="terms"><a href="http://m.nexon.com/terms/27" target="blank">使用者條款</a> ︱ <a href="http://m.nexon.com/terms/29" target="blank">個人隱私權</a></div>
+	    	  
 	</div>
 </div>
 	
