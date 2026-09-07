@@ -133,7 +133,7 @@ nav .nav_box .login_box .nav_team {
 }
 nav .nav_box .login_box .nav_name {
 	width:auto;
-	margin:0% 0 0 0;
+	margin:0.5% 0 0 0;
 	padding:0 0;
 	display:inline;
 	text-align:right;
@@ -1232,8 +1232,8 @@ ul.menu li:hover {
 }
 #wrapper #tresure_title ul li {
     width:23.3%;
-	margin:0 3% 0 3%;
-	padding:1% 2%;
+	margin:0 5% 0 5%;
+	padding:1% 0%;
 	font-family: "微軟正黑體", "PingFang";
 	font-size:26px;
 	line-height: 26px;
@@ -1313,11 +1313,11 @@ ul.menu li:hover {
 #wrapper #tresure_box li dd {
 	width:80%;
 	height:48px;
-	margin:0 0;
-	padding:3% 10% 0 10%;
+	margin:0 10%;
+	padding:3% 0 0 0;
 	background-color:#ffffff;
 	font-family: "微軟正黑體", "PingFang";
-	font-size:16px;
+	font-size:14px;
 	line-height: 20px;
 	font-weight: bold;
 	color: #333333;
@@ -1331,9 +1331,9 @@ ul.menu li:hover {
 	padding:3.5% 0;
 	background-color:#ffffff;
 	font-family: "微軟正黑體", "PingFang";
-	font-size:24px;
+	font-size:20px;
 	line-height: 24px;
-	font-weight: bold;
+	font-weight: normal;
 	color: #e0504c;
 	text-align:left;
 	float:left;

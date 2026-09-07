@@ -317,7 +317,7 @@ nav .nav_box .login_box .nav_team {
 	font-family: "微軟正黑體", "PingFang";
 	font-size:11px;
 	line-height: 11px;
-	font-weight: bold;
+	font-weight: normal;
         white-space: nowrap;
 	color: #ffffff;
 	text-align:right;
@@ -855,8 +855,8 @@ ul.menu li:hover {
 }
 #wrapper #tresure_title ul li {
     width:25.3%;
-	margin:0 2% 2% 2%;
-	padding:2% 2%;
+	margin:0 4% 2% 4%;
+	padding:2% 0%;
 	font-family: "微軟正黑體", "PingFang";
 	font-size:20px;
 	line-height: 20px;
@@ -933,11 +933,11 @@ ul.menu li:hover {
 #wrapper #tresure_box li dd {
 	width:80%;
 	height:48px;
-	margin:0 0;
-	padding:3% 10% 0 10%;
+	margin:0 10%;
+	padding:3% 0 0 0;
 	background-color:#ffffff;
 	font-family: "微軟正黑體", "PingFang";
-	font-size:16px;
+	font-size:15px;
 	line-height: 20px;
 	font-weight: bold;
 	color: #333333;
@@ -951,8 +951,8 @@ ul.menu li:hover {
 	padding:3.5% 0;
 	background-color:#ffffff;
 	font-family: "微軟正黑體", "PingFang";
-	font-size:28px;
-	line-height: 28px;
+	font-size:22px;
+	line-height: 22px;
 	font-weight: bold;
 	color: #e0504c;
 	text-align:left;

@@ -325,7 +325,7 @@ nav .nav_box .login_box .nav_team {
 	font-family: "微軟正黑體", "PingFang";
 	font-size:13px;
 	line-height: 13px;
-	font-weight: bold;
+	font-weight: normal;
 	color: #ffffff;
 	text-align:right;
 	white-space: nowrap;
@@ -861,8 +861,8 @@ ul.menu li:hover {
 }
 #wrapper #tresure_title ul li {
     width:25.3%;
-	margin:0 2% 2% 2%;
-	padding:2% 2%;
+	margin:0 4% 2% 4%;
+	padding:2% 0;
 	font-family: "微軟正黑體", "PingFang";
 	font-size:22px;
 	line-height: 22px;
