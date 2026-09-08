@@ -532,7 +532,7 @@ ul.menu li:hover {
 }
 #wrapper .main_visual {
 	width:100%;
-	margin:6.8% 0 0 0;
+	margin:56px 0 0 0;
 	padding:0 0;
 	float:left;
 }
@@ -964,11 +964,11 @@ ul.menu li:hover {
 	text-align:left;
 	float:left;
 }
-#wrapper #tresure_box li ol {
+#wrapper #tresure_box ol {
 	width:80%;
 	height:auto;
-	margin:4% 10% 0 10%;
-	padding:1.5% 0%;
+	margin:3% 10% 0 10%;
+	padding:1% 0%;
 	border-radius:10px;
     background: linear-gradient(to right,  rgba(239,239,239,0) 0%,rgba(239,239,239,1) 25%,rgba(239,239,239,1) 75%,rgba(239,239,239,0) 100%); 
 	font-family: "微軟正黑體", "PingFang"; 
@@ -1478,7 +1478,7 @@ ul.menu li:hover {
 
 #footer {
 	width:100%;
-	margin:5% 0 0 0;
+	margin:2% 0 0 0;
 	padding:0% 0% 4% 0%;
 	background-color:#333333;
 	float:left;
